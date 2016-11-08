@@ -57,6 +57,6 @@ The files under the [samples](/sample/) folder are provided as a proof of concep
 
 ##Screenshots
 
-![File Select screen](/screens/fileselect.png?raw=true)
-![Special Setting screen](/screens/specialsetting.png?raw=true)
-![Sample room edit](/screens/room.png?raw=true)
+![File Select screen](/screens/fileselect.PNG?raw=true)
+![Special Setting screen](/screens/specialsetting.PNG?raw=true)
+![Sample room edit](/screens/room.PNG?raw=true)
