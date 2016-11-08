@@ -10,7 +10,7 @@
     TweakFileEnergyDigits:
       PHA
       JSL IsNormalModeEnabled : BEQ + : BMI +
-      LDA $09C2 : CMP !StartingEnergyAddress : BPL +
+      LDA $09C2 : CLC : SBC #$0001 : CMP !StartingEnergyAddress : BPL +
       LDA !EnergyPerTankAddress : LSR A : STA !TempAddress
       PLA
       CLC : ADC !TempAddress
