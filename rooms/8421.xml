@@ -1,0 +1,129 @@
+<Room>
+  <Saves>
+    <SaveRoom>
+      <saveindex>0A</saveindex>
+      <indoor roomarea="00" roomindex="13" doorindex="01" />
+      <unused>0000</unused>
+      <unused>0000</unused>
+      <screenx>0000</screenx>
+      <screeny>0000</screeny>
+      <samusx>0088</samusx>
+      <samusy>0000</samusy>
+    </SaveRoom>
+  </Saves>
+  <index>14</index>
+  <area>00</area>
+  <x>17</x>
+  <y>11</y>
+  <width>01</width>
+  <height>01</height>
+  <upscroll>70</upscroll>
+  <dnscroll>A0</dnscroll>
+  <specialGFX>00</specialGFX>
+  <Doors>
+    <Door>
+      <toroom area="00" index="13" />
+      <bitflag>00</bitflag>
+      <direction>05</direction>
+      <doortype>062E</doortype>
+      <x>02</x>
+      <y>00</y>
+      <distance>8000</distance>
+      <doorcode>0000</doorcode>
+    </Door>
+    <Door>
+      <toroom area="01" index="0E" />
+      <bitflag>F0</bitflag>
+      <direction>02</direction>
+      <doortype>0000</doortype>
+      <x>05</x>
+      <y>00</y>
+      <distance>0000</distance>
+      <doorcode>0000</doorcode>
+    </Door>
+    <Elevator />
+  </Doors>
+  <States>
+    <State condition="E652" conditionval="0">
+      <LevelData>00 02 B8 83 92 83 B8 83 92 83 B8 83 92 83 B8 83 B8 83 B8 83 B8 83 92 83 B8 83 92 83 B8 83 92 83 B8 83 B2 83 AD 83 B2 83 AD 83 B2 83 AD 83 B2 83 B2 83 B2 83 B2 83 AD 83 B2 83 AD 83 B2 83 AD 83 B2 83 B8 83 92 83 B8 83 92 83 B8 83 92 83 B8 83 B8 83 B8 83 B8 83 92 83 B8 83 92 83 B8 83 92 83 B8 83 B2 83 FF 80 B2 83 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 B2 83 FF 80 B2 83 B2 83 FF 80 B2 83 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 B2 83 FF 80 B2 83 92 83 AE 83 92 83 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 92 83 AE 83 92 83 40 94 0C C4 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 B2 8B 60 94 2C D4 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 B3 83 60 9C 2C DC FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 B3 8B 40 9C 0C DC FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 B2 83 92 83 AE 83 92 83 AE 83 92 83 AE 83 77 83 FF 90 FF 90 77 83 AE 83 92 83 AE 83 92 83 AE 83 92 83 B2 83 FF 80 B2 83 FF 80 B2 83 FF 80 B2 83 FF 00 FF 00 B2 83 FF 80 B2 83 FF 80 B2 83 FF 80 B2 83 92 83 B8 83 92 83 B8 83 92 83 B8 83 92 83 FF 00 FF 00 92 83 B8 83 92 83 B8 83 92 83 B8 83 92 83 B3 83 B2 83 B3 83 B2 83 B3 83 B2 83 B3 83 FF 00 FF 00 B3 83 B2 83 B3 83 B2 83 B3 83 B2 83 B3 83 B3 8B B2 83 B3 8B B2 83 B3 8B B2 83 B3 8B FF 00 FF 00 B3 8B B2 83 B3 8B B2 83 B3 8B B2 83 B3 8B AF 83 B0 83 B0 83 B0 83 B0 83 B0 83 B1 83 FF 90 FF 90 AF 83 B0 83 B0 83 B0 83 B0 83 B0 83 B1 83 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 FE 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 FD 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 01 00 00 00 00 00 00 00 86 03 87 03 81 03 85 03 86 03 87 03 A1 03 89 03 89 03 A1 03 85 03 86 03 87 03 81 03 85 03 86 03 80 03 A4 03 81 03 A3 03 80 03 A4 03 A1 03 89 03 89 03 A1 03 A3 03 80 03 A4 03 81 03 A3 03 80 03 80 03 A4 03 81 03 A3 03 80 03 A4 03 A1 03 89 03 89 03 A1 03 A3 03 88 03 A4 03 81 03 A3 03 80 03 A6 03 A7 03 81 03 A3 03 88 03 A4 03 A1 03 83 0B 83 0B A1 03 A3 03 88 03 A4 03 81 03 A5 03 A6 03 86 03 87 03 81 03 A3 03 88 03 A4 03 A1 03 85 03 87 03 A1 03 A3 03 80 03 A4 03 81 03 85 03 86 03 80 03 A4 03 81 03 A3 03 80 03 A4 03 82 03 A5 03 A7 03 82 03 A3 03 A0 03 A4 03 81 03 A3 03 80 03 80 03 A4 03 81 03 A3 03 A9 03 A4 03 81 03 80 03 80 03 81 03 A3 03 80 03 A4 03 81 03 A3 03 80 03 A6 03 A7 03 81 03 A5 03 A6 03 A7 03 81 03 85 03 87 03 81 03 A5 03 A6 03 A7 03 81 03 A5 03 A6 03 86 03 87 03 81 03 85 03 86 03 87 03 81 03 A5 03 A7 03 81 03 85 03 86 03 87 03 81 03 85 03 86 03 80 03 A4 03 81 03 A3 03 88 07 A4 03 81 03 80 03 80 03 81 03 A3 03 AB 03 A4 03 81 03 A3 03 80 03 80 03 A4 03 81 03 A3 03 88 07 A4 03 A2 03 85 03 87 03 A2 03 A3 03 88 03 A4 03 81 03 A3 03 80 03 A6 03 A7 03 81 03 A3 03 80 03 A4 03 A1 03 A5 03 A7 03 A1 03 A3 03 88 03 A4 03 81 03 A5 03 A6 03 86 03 87 03 81 03 A3 03 A0 03 A4 03 A1 03 83 03 83 03 A1 03 A3 03 88 03 A4 03 81 03 85 03 86 03 80 03 A4 03 81 03 A3 03 80 03 A4 03 A1 03 89 03 89 03 A1 03 A3 03 80 03 A4 03 81 03 A3 03 80 03 80 03 A4 03 81 03 A3 03 80 03 A4 03 A1 03 89 03 89 03 A1 03 A3 03 80 03 A4 03 81 03 A3 03 80 03 A6 03 A7 03 81 03 A5 03 A6 03 A7 03 A1 03 89 03 89 03 A1 03 A5 03 A6 03 A7 03 81 03 A5 03 A6 03 </LevelData>
+      <GFXset>02</GFXset>
+      <music>0300</music>
+      <FX1s>
+        <FX1 default="true">
+          <surfacestart>FFFF</surfacestart>
+          <surfacenew>FFFF</surfacenew>
+          <surfacespeed>0000</surfacespeed>
+          <surfacedelay>00</surfacedelay>
+          <type>00</type>
+          <transparency1_A>02</transparency1_A>
+          <transparency2_B>02</transparency2_B>
+          <liquidflags_C>00</liquidflags_C>
+          <paletteflags>00</paletteflags>
+          <animationflags>00</animationflags>
+          <paletteblend>00</paletteblend>
+        </FX1>
+      </FX1s>
+      <Enemies killcount="00">
+        <Enemy>
+          <ID>D73F</ID>
+          <X>0080</X>
+          <Y>00A2</Y>
+          <tilemap>0000</tilemap>
+          <special>2C00</special>
+          <gfx>0000</gfx>
+          <speed>0000</speed>
+          <speed2>0140</speed2>
+        </Enemy>
+      </Enemies>
+      <EnemyTypes />
+      <layer2scroll>0000</layer2scroll>
+      <ScrollData>01 </ScrollData>
+      <roomvar>0000</roomvar>
+      <FX2>0000</FX2>
+      <PLMs>
+        <PLM>
+          <type>B703</type>
+          <x>07</x>
+          <y>0D</y>
+          <ScrollData>
+            <Change screen="00" scroll="02" />
+          </ScrollData>
+        </PLM>
+      </PLMs>
+      <BGdata>0000</BGdata>
+      <layer1_2>91BC</layer1_2>
+    </State>
+    <State condition="default">
+      <LevelData>00 02 B8 83 92 83 B8 83 92 83 B8 83 92 83 B8 83 B8 83 B8 83 B8 83 92 83 B8 83 92 83 B8 83 92 83 B8 83 B2 83 AD 83 B2 83 AD 83 B2 83 AD 83 B2 83 B2 83 B2 83 B2 83 AD 83 B2 83 AD 83 B2 83 AD 83 B2 83 B8 83 92 83 B8 83 92 83 B8 83 92 83 B8 83 B8 83 B8 83 B8 83 92 83 B8 83 92 83 B8 83 92 83 B8 83 B2 83 FF 80 B2 83 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 B2 83 FF 80 B2 83 B2 83 FF 80 B2 83 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 B2 83 FF 80 B2 83 92 83 AE 83 92 83 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 92 83 AE 83 92 83 40 94 0C C4 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 B2 8B 60 94 2C D4 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 B3 83 60 9C 2C DC FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 B3 8B 40 9C 0C DC FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 B2 83 92 83 AE 83 92 83 AE 83 92 83 AE 83 77 83 FF 90 FF 90 77 83 AE 83 92 83 AE 83 92 83 AE 83 92 83 B2 83 FF 80 B2 83 FF 80 B2 83 FF 80 B2 83 FF 00 FF 00 B2 83 FF 80 B2 83 FF 80 B2 83 FF 80 B2 83 92 83 B8 83 92 83 B8 83 92 83 B8 83 92 83 FF 00 FF 00 92 83 B8 83 92 83 B8 83 92 83 B8 83 92 83 B3 83 B2 83 B3 83 B2 83 B3 83 B2 83 B3 83 FF 00 FF 00 B3 83 B2 83 B3 83 B2 83 B3 83 B2 83 B3 83 B3 8B B2 83 B3 8B B2 83 B3 8B B2 83 B3 8B FF 00 FF 00 B3 8B B2 83 B3 8B B2 83 B3 8B B2 83 B3 8B AF 83 B0 83 B0 83 B0 83 B0 83 B0 83 B1 83 FF 90 FF 90 AF 83 B0 83 B0 83 B0 83 B0 83 B0 83 B1 83 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 FE 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 FD 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 01 00 00 00 00 00 00 00 86 03 87 03 81 03 85 03 86 03 87 03 A1 03 89 03 89 03 A1 03 85 03 86 03 87 03 81 03 85 03 86 03 80 03 A4 03 81 03 A3 03 80 03 A4 03 A1 03 89 03 89 03 A1 03 A3 03 80 03 A4 03 81 03 A3 03 80 03 80 03 A4 03 81 03 A3 03 80 03 A4 03 A1 03 89 03 89 03 A1 03 A3 03 88 03 A4 03 81 03 A3 03 80 03 A6 03 A7 03 81 03 A3 03 88 03 A4 03 A1 03 83 0B 83 0B A1 03 A3 03 88 03 A4 03 81 03 A5 03 A6 03 86 03 87 03 81 03 A3 03 88 03 A4 03 A1 03 85 03 87 03 A1 03 A3 03 80 03 A4 03 81 03 85 03 86 03 80 03 A4 03 81 03 A3 03 80 03 A4 03 82 03 A5 03 A7 03 82 03 A3 03 A0 03 A4 03 81 03 A3 03 80 03 80 03 A4 03 81 03 A3 03 A9 03 A4 03 81 03 80 03 80 03 81 03 A3 03 80 03 A4 03 81 03 A3 03 80 03 A6 03 A7 03 81 03 A5 03 A6 03 A7 03 81 03 85 03 87 03 81 03 A5 03 A6 03 A7 03 81 03 A5 03 A6 03 86 03 87 03 81 03 85 03 86 03 87 03 81 03 A5 03 A7 03 81 03 85 03 86 03 87 03 81 03 85 03 86 03 80 03 A4 03 81 03 A3 03 88 07 A4 03 81 03 80 03 80 03 81 03 A3 03 AB 03 A4 03 81 03 A3 03 80 03 80 03 A4 03 81 03 A3 03 88 07 A4 03 A2 03 85 03 87 03 A2 03 A3 03 88 03 A4 03 81 03 A3 03 80 03 A6 03 A7 03 81 03 A3 03 80 03 A4 03 A1 03 A5 03 A7 03 A1 03 A3 03 88 03 A4 03 81 03 A5 03 A6 03 86 03 87 03 81 03 A3 03 A0 03 A4 03 A1 03 83 03 83 03 A1 03 A3 03 88 03 A4 03 81 03 85 03 86 03 80 03 A4 03 81 03 A3 03 80 03 A4 03 A1 03 89 03 89 03 A1 03 A3 03 80 03 A4 03 81 03 A3 03 80 03 80 03 A4 03 81 03 A3 03 80 03 A4 03 A1 03 89 03 89 03 A1 03 A3 03 80 03 A4 03 81 03 A3 03 80 03 A6 03 A7 03 81 03 A5 03 A6 03 A7 03 A1 03 89 03 89 03 A1 03 A5 03 A6 03 A7 03 81 03 A5 03 A6 03 </LevelData>
+      <GFXset>02</GFXset>
+      <music>0506</music>
+      <FX1s>
+        <FX1 default="true">
+          <surfacestart>FFFF</surfacestart>
+          <surfacenew>FFFF</surfacenew>
+          <surfacespeed>0000</surfacespeed>
+          <surfacedelay>00</surfacedelay>
+          <type>00</type>
+          <transparency1_A>2A</transparency1_A>
+          <transparency2_B>02</transparency2_B>
+          <liquidflags_C>00</liquidflags_C>
+          <paletteflags>00</paletteflags>
+          <animationflags>00</animationflags>
+          <paletteblend>00</paletteblend>
+        </FX1>
+      </FX1s>
+      <Enemies duplicate="00">
+      </Enemies>
+      <EnemyTypes duplicate="00" />
+      <layer2scroll>0000</layer2scroll>
+      <ScrollData duplicate="00">
+      </ScrollData>
+      <roomvar>0000</roomvar>
+      <FX2>0000</FX2>
+      <PLMs duplicate="00">
+      </PLMs>
+      <BGdata>0000</BGdata>
+      <layer1_2>91D4</layer1_2>
+    </State>
+  </States>
+</Room>

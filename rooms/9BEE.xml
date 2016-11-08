@@ -1,0 +1,62 @@
+<Room>
+  <Saves />
+  <index>49</index>
+  <area>02</area>
+  <x>16</x>
+  <y>11</y>
+  <width>01</width>
+  <height>01</height>
+  <upscroll>70</upscroll>
+  <dnscroll>A0</dnscroll>
+  <specialGFX>00</specialGFX>
+  <Doors>
+    <Door>
+      <toroom area="02" index="3A" />
+      <bitflag>00</bitflag>
+      <direction>04</direction>
+      <doortype>1601</doortype>
+      <x>00</x>
+      <y>01</y>
+      <distance>8000</distance>
+      <doorcode>0000</doorcode>
+    </Door>
+  </Doors>
+  <States>
+    <State condition="default">
+      <LevelData>00 02 54 81 4F 81 54 81 54 81 4F 81 54 81 54 81 4F 81 54 81 54 81 4F 81 54 81 53 81 54 81 4F 81 54 81 54 81 53 81 4F 81 54 81 53 81 54 81 4F 81 54 81 53 81 54 81 53 81 54 81 4F 81 54 81 53 81 54 81 4F 81 54 81 4F 81 53 81 54 81 54 81 4F 85 53 81 4F 85 4F 85 54 81 54 81 53 81 4F 81 54 81 53 81 53 81 54 81 53 81 54 81 4F 85 54 81 53 81 54 81 54 81 53 81 54 81 4F 85 54 81 53 81 4F 81 54 81 4F 85 54 81 D2 85 D1 15 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 D1 11 D2 81 54 81 53 81 54 81 53 81 D4 15 D3 15 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 D3 11 D4 11 53 81 4F 81 53 81 54 81 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 0C C0 40 90 54 81 54 81 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 2C D0 60 90 4F 85 53 81 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 2C D8 60 98 54 81 4F 81 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 0C D8 40 98 53 81 54 81 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 54 81 53 81 54 81 54 81 FF 00 FF 00 FF 00 FF 00 2B 02 2C 02 2D 02 2E 02 FF 00 FF 00 FF 00 FF 00 54 81 4F 81 4F 85 53 81 54 81 54 81 53 81 54 81 53 81 4F 85 54 81 53 81 54 81 53 81 54 81 54 81 53 81 54 81 4F 85 54 81 4F 85 53 81 4F 85 54 81 4F 85 53 81 4F 85 54 81 4F 85 54 81 53 81 4F 85 54 81 4F 85 53 81 54 81 54 81 4F 85 54 81 54 81 4F 85 54 81 54 81 53 81 54 81 4F 85 54 81 54 81 53 81 54 81 54 81 4F 85 53 81 54 81 4F 85 53 81 54 81 53 81 4F 85 54 81 53 81 54 81 4F 85 4F 85 54 81 53 81 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 C3 00 00 00 00 00 00 00 00 83 00 00 00 00 00 C0 C2 00 00 00 00 00 00 00 00 82 80 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 FE 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 FD 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 </LevelData>
+      <GFXset>09</GFXset>
+      <music>0000</music>
+      <FX1s>
+        <FX1 default="true">
+          <surfacestart>00DD</surfacestart>
+          <surfacenew>FFFF</surfacenew>
+          <surfacespeed>0000</surfacespeed>
+          <surfacedelay>00</surfacedelay>
+          <type>04</type>
+          <transparency1_A>02</transparency1_A>
+          <transparency2_B>1E</transparency2_B>
+          <liquidflags_C>82</liquidflags_C>
+          <paletteflags>1F</paletteflags>
+          <animationflags>00</animationflags>
+          <paletteblend>00</paletteblend>
+        </FX1>
+      </FX1s>
+      <Enemies killcount="00" />
+      <EnemyTypes />
+      <layer2scroll>0101</layer2scroll>
+      <ScrollData const="0000" />
+      <roomvar>0000</roomvar>
+      <FX2>0000</FX2>
+      <PLMs>
+        <PLM>
+          <type>EF7F</type>
+          <x>0E</x>
+          <y>0B</y>
+          <arg>004E</arg>
+        </PLM>
+      </PLMs>
+      <BGdata>BF32</BGdata>
+      <layer1_2>91F7</layer1_2>
+    </State>
+  </States>
+</Room>

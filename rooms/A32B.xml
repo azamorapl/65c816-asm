@@ -1,0 +1,156 @@
+<Room>
+  <Saves />
+  <index>0E</index>
+  <area>04</area>
+  <x>10</x>
+  <y>10</y>
+  <width>01</width>
+  <height>02</height>
+  <upscroll>70</upscroll>
+  <dnscroll>A0</dnscroll>
+  <specialGFX>00</specialGFX>
+  <Doors>
+    <Door>
+      <toroom area="04" index="07" />
+      <bitflag>00</bitflag>
+      <direction>05</direction>
+      <doortype>063E</doortype>
+      <x>03</x>
+      <y>00</y>
+      <distance>8000</distance>
+      <doorcode>0000</doorcode>
+    </Door>
+    <Door>
+      <toroom area="04" index="0F" />
+      <bitflag>00</bitflag>
+      <direction>04</direction>
+      <doortype>0601</doortype>
+      <x>00</x>
+      <y>00</y>
+      <distance>8000</distance>
+      <doorcode>0000</doorcode>
+    </Door>
+    <Door>
+      <toroom area="04" index="03" />
+      <bitflag>00</bitflag>
+      <direction>05</direction>
+      <doortype>063E</doortype>
+      <x>03</x>
+      <y>00</y>
+      <distance>8000</distance>
+      <doorcode>0000</doorcode>
+    </Door>
+    <Door>
+      <toroom area="04" index="16" />
+      <bitflag>00</bitflag>
+      <direction>04</direction>
+      <doortype>0601</doortype>
+      <x>00</x>
+      <y>00</y>
+      <distance>8000</distance>
+      <doorcode>0000</doorcode>
+    </Door>
+  </Doors>
+  <States>
+    <State condition="default">
+      <LevelData>00 04 1D 81 1D 81 1D 81 1D 81 1D 81 1D 81 1D 81 1D 81 1D 81 1D 81 1D 81 1D 81 1D 81 1D 81 1D 81 1D 81 1D 81 1D 81 1D 81 1D 81 1D 81 1D 81 1D 81 1D 81 1D 81 1D 81 1D 81 1D 81 1D 81 1D 81 1D 81 1D 81 1D 81 1D 81 1D 81 88 8D 80 8D A0 89 A0 89 80 89 88 89 1D 81 1D 81 1D 81 1D 81 1D 81 1D 81 1D 81 1D 81 1D 81 95 85 94 15 FF 00 FF 00 FF 00 FF 00 87 19 80 19 A0 19 80 89 88 89 1D 81 1D 81 1D 81 1D 81 88 8D 8C 8D FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 87 19 80 89 95 81 1D 81 88 8D 8C 8D 41 81 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 41 85 8C 89 88 89 AC 95 24 03 22 03 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 22 07 24 07 AC 91 AD 95 25 03 23 03 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 23 07 25 07 AD 91 AD 9D 25 0B 23 0B FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 23 0F 25 0F AD 99 AC 9D 24 0B 22 0B FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 22 0F 24 0F AC 99 88 85 8C 85 4E 81 4F 81 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 4F 85 4E 85 8C 81 88 81 1D 81 88 85 80 85 8C 85 FF 00 FF 00 FF 00 5F 80 5F 80 FF 00 FF 00 FF 00 8C 81 80 81 88 81 1D 81 1D 81 1D 81 1D 81 95 8D 94 1D FF 00 C4 02 C3 02 C6 02 FF 00 C6 02 94 19 95 89 1D 81 1D 81 1D 81 1D 81 1D 81 1D 81 1D 81 88 85 80 81 A0 81 A3 01 A3 01 A0 81 80 81 88 81 1D 81 1D 81 1D 81 1D 81 1D 81 1D 81 1D 81 1D 81 1D 81 1D 81 1D 81 1F 53 1F 03 1D 81 1D 81 1D 81 1D 81 1D 81 1D 81 1D 81 86 89 1D 81 1D 81 1D 81 1D 81 1D 81 1D 81 1F 03 1F 03 1D 81 1D 81 1D 81 1D 81 1D 81 1D 81 86 8D 8D 81 1D 81 1D 81 1D 81 1D 81 1D 81 86 8D A2 09 A2 09 86 89 1D 81 1D 81 1D 81 1D 81 1D 81 8D 85 8C 89 80 89 A0 89 A0 89 80 89 80 89 8C 8D A1 59 A1 09 8C 89 80 89 80 89 80 89 A0 89 80 89 8C 8D 5F 80 5F 80 5F 80 7B 80 7B 80 7B 80 7C 80 FF 00 FF 00 7A 80 7B 80 7B 80 7B 80 5F 80 5F 80 5F 80 5F 80 FF 00 BD 80 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 BD 80 FF 00 5F 80 5F 80 FF 00 BD 88 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 BD 88 FF 00 5F 80 5F 80 5F 80 5F 80 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 5F 80 5F 80 5F 80 40 94 0C C4 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 0C C0 40 90 60 94 2C D4 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 2C D0 60 90 60 9C 2C DC FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 2C D8 60 98 40 9C 0C DC FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 0C D8 40 98 5F 80 5F 80 5F 80 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 5F 80 5F 80 5F 80 5F 80 FF 00 BD 80 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 BD 80 FF 00 5F 80 5F 80 FF 00 BD 88 FF 00 FF 00 FF 00 FF 00 7A 80 7C 80 FF 00 FF 00 FF 00 FF 00 BD 88 FF 00 5F 80 5F 80 5F 80 5F 80 7B 80 7B 80 7B 80 7B 80 7B 80 7B 80 7B 80 7B 80 7B 80 7B 80 5F 80 5F 80 5F 80 5F 80 5F 80 5F 80 5F 80 5F 80 5F 80 5F 80 5F 80 5F 80 5F 80 5F 80 5F 80 5F 80 5F 80 5F 80 5F 80 5F 80 5F 80 5F 80 5F 80 5F 80 5F 80 5F 80 5F 80 5F 80 5F 80 5F 80 5F 80 5F 80 5F 80 5F 80 5F 80 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D2 00 00 00 00 92 93 93 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 92 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 52 00 00 00 00 00 00 12 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 41 00 00 00 00 00 00 00 00 00 00 00 00 40 03 02 FF 00 00 00 00 00 00 00 00 00 00 00 00 FF 03 02 FE 00 00 00 00 00 00 00 00 00 00 00 00 FE 03 02 FD 00 00 00 00 00 00 00 00 00 00 00 00 FD 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 E0 02 E0 02 E0 02 E0 02 E0 02 E0 02 E0 02 E1 02 E0 02 E0 02 E0 02 E0 02 E0 02 E0 02 E0 02 E0 02 E0 02 E0 02 E0 02 E0 02 E0 02 E0 02 E0 02 E1 02 E1 02 E0 02 E0 02 E0 02 E0 02 E0 02 E1 02 E0 02 E0 02 E0 02 E0 02 E1 02 E0 02 E0 02 E0 02 E0 02 E1 02 E0 02 E0 02 E0 02 E1 02 E1 02 E0 02 E0 02 E0 02 E0 02 E1 02 E2 02 E1 02 E0 02 E0 02 E1 02 E1 02 E1 02 E0 02 E1 02 E2 02 E1 02 E1 02 E0 02 E0 02 E0 02 E1 02 E1 02 E0 02 E1 02 E1 02 E1 02 E2 02 E2 02 E1 02 E0 02 E1 02 E0 02 E1 02 E0 02 E1 02 E1 02 E2 02 E1 02 E1 02 E2 02 E1 02 E1 02 E1 02 E2 02 E2 02 E1 02 E0 02 E1 02 E2 02 E1 02 E2 02 E2 02 E2 02 E2 02 E1 02 E1 02 E2 02 E2 02 E2 02 E1 02 E2 02 E2 02 E1 02 E2 02 E2 02 E1 02 E2 02 E2 02 E2 02 E2 02 E1 02 E0 02 E1 02 E1 02 E2 02 E2 02 E2 02 E1 02 E2 02 E2 02 E1 02 E1 02 E1 02 E0 02 E2 02 E2 02 E2 02 E1 02 E1 02 E2 02 E2 02 E1 02 E1 02 E0 02 E1 02 E2 02 E2 02 E2 02 E1 02 E2 02 E2 02 E1 02 E1 02 E2 02 E2 02 E1 02 E1 02 E2 02 E1 02 E1 02 E2 02 E2 02 E1 02 E1 02 E0 02 E1 02 E1 02 E0 02 E0 02 E1 02 E1 02 E0 02 E1 02 E2 02 E2 02 E1 02 E1 02 E2 02 E2 02 E1 02 E0 02 E0 02 E0 02 E0 02 E0 02 E0 02 E0 02 E1 02 E2 02 E2 02 E1 02 E0 02 E0 02 E1 02 E2 02 E2 02 E0 02 E0 02 E0 02 E0 02 E0 02 E1 02 E1 02 E2 02 E1 02 E1 02 E0 02 E0 02 E0 02 E0 02 E1 02 E2 02 E0 02 E0 02 E1 02 E1 02 E1 02 E2 02 E2 02 E1 02 E0 02 E0 02 E1 02 E1 02 E0 02 E0 02 E0 02 E1 02 E0 02 E1 02 E1 02 E0 02 E1 02 E2 02 E1 02 E0 02 E0 02 E0 02 E0 02 E1 02 E1 02 E0 02 E0 02 E0 02 E0 02 E0 02 E0 02 E0 02 E0 02 E1 02 E0 02 E0 02 E0 02 E0 02 E0 02 E0 02 E0 02 E0 02 E0 02 E0 02 E2 02 E2 02 E1 02 E1 02 E2 02 E1 02 E0 02 E0 02 E1 02 E2 02 E2 02 E2 02 E2 02 E1 02 E1 02 E2 02 E2 02 E1 02 E0 02 E0 02 E1 02 E0 02 E0 02 E0 02 E0 02 E1 02 E2 02 E2 02 E1 02 E0 02 E0 02 E1 02 E2 02 E2 02 E1 02 E1 02 E0 02 E1 02 E0 02 E1 02 E1 02 E2 02 E1 02 E2 02 E2 02 E1 02 E0 02 E0 02 E2 02 E2 02 E2 02 E1 02 E1 02 E0 02 E0 02 E0 02 E1 02 E1 02 E0 02 E1 02 E1 02 E0 02 E1 02 E0 02 E2 02 E2 02 E1 02 E0 02 E1 02 E1 02 E0 02 E0 02 E0 02 E0 02 E0 02 E0 02 E1 02 E1 02 E1 02 E1 02 E2 02 E2 02 E1 02 E1 02 E0 02 E1 02 E0 02 E1 02 E0 02 E1 02 E0 02 E1 02 E0 02 E0 02 E1 02 E0 02 E2 02 E1 02 E0 02 E0 02 E1 02 E0 02 E0 02 E0 02 E1 02 E1 02 E0 02 E0 02 E0 02 E1 02 E0 02 E0 02 E2 02 E2 02 E1 02 E0 02 E0 02 E0 02 E1 02 E1 02 E2 02 E1 02 E1 02 E0 02 E1 02 E0 02 E0 02 E0 02 E2 02 E1 02 E1 02 E1 02 E0 02 E1 02 E1 02 E0 02 E1 02 E0 02 E0 02 E1 02 E1 02 E0 02 E0 02 E1 02 E1 02 E0 02 E0 02 E1 02 E0 02 E0 02 E0 02 E1 02 E1 02 E0 02 E1 02 E1 02 E0 02 E0 02 E1 02 E2 02 E0 02 E0 02 E0 02 E1 02 E1 02 E0 02 E1 02 E1 02 E0 02 E0 02 E0 02 E1 02 E1 02 E1 02 E1 02 E2 02 E1 02 E0 02 E1 02 E2 02 E1 02 E0 02 E0 02 E1 02 E1 02 E1 02 E0 02 E1 02 E1 02 E0 02 E0 02 E1 02 E2 02 E1 02 E2 02 E1 02 E0 02 E1 02 E1 02 E1 02 E1 02 E0 02 E1 02 E1 02 E0 02 E0 02 E0 02 E0 02 E2 02 E2 02 E2 02 E2 02 E1 02 E2 02 E1 02 E0 02 E0 02 E0 02 E1 02 E0 02 E0 02 E0 02 E0 02 E1 02 E2 02 E2 02 E2 02 E2 02 E2 02 E1 02 E0 02 E0 02 E0 02 E1 02 E2 02 E1 02 E1 02 E0 02 E1 02 E2 02 E2 02 E2 02 E2 02 E2 02 E1 02 E0 02 E0 02 E1 02 E1 02 E2 02 E2 02 E2 02 E2 02 E1 02 E2 02 E2 02 00 </LevelData>
+      <GFXset>0B</GFXset>
+      <music>051B</music>
+      <FX1s>
+        <FX1 default="true">
+          <surfacestart>0010</surfacestart>
+          <surfacenew>FFFF</surfacenew>
+          <surfacespeed>0000</surfacespeed>
+          <surfacedelay>00</surfacedelay>
+          <type>06</type>
+          <transparency1_A>02</transparency1_A>
+          <transparency2_B>14</transparency2_B>
+          <liquidflags_C>80</liquidflags_C>
+          <paletteflags>00</paletteflags>
+          <animationflags>00</animationflags>
+          <paletteblend>E2</paletteblend>
+        </FX1>
+      </FX1s>
+      <Enemies killcount="04">
+        <Enemy>
+          <ID>D77F</ID>
+          <X>0060</X>
+          <Y>0037</Y>
+          <tilemap>0002</tilemap>
+          <special>2800</special>
+          <gfx>0000</gfx>
+          <speed>0001</speed>
+          <speed2>0000</speed2>
+        </Enemy>
+        <Enemy>
+          <ID>D77F</ID>
+          <X>0076</X>
+          <Y>00E8</Y>
+          <tilemap>0000</tilemap>
+          <special>2801</special>
+          <gfx>0000</gfx>
+          <speed>0004</speed>
+          <speed2>0000</speed2>
+        </Enemy>
+        <Enemy>
+          <ID>D77F</ID>
+          <X>0076</X>
+          <Y>0100</Y>
+          <tilemap>0000</tilemap>
+          <special>2801</special>
+          <gfx>0000</gfx>
+          <speed>0002</speed>
+          <speed2>0000</speed2>
+        </Enemy>
+        <Enemy>
+          <ID>D77F</ID>
+          <X>0080</X>
+          <Y>01B8</Y>
+          <tilemap>0003</tilemap>
+          <special>2800</special>
+          <gfx>0000</gfx>
+          <speed>0002</speed>
+          <speed2>0000</speed2>
+        </Enemy>
+      </Enemies>
+      <EnemyTypes>
+        <Enemy>
+          <GFX>D77F</GFX>
+          <palette>0001</palette>
+        </Enemy>
+      </EnemyTypes>
+      <layer2scroll>0000</layer2scroll>
+      <ScrollData>01 00 </ScrollData>
+      <roomvar>0000</roomvar>
+      <FX2>0000</FX2>
+      <PLMs>
+        <PLM>
+          <type>B703</type>
+          <x>08</x>
+          <y>0E</y>
+          <ScrollData>
+            <Change screen="00" scroll="02" />
+            <Change screen="01" scroll="01" />
+          </ScrollData>
+        </PLM>
+        <PLM>
+          <type>B703</type>
+          <x>08</x>
+          <y>11</y>
+          <ScrollData>
+            <Change screen="00" scroll="02" />
+            <Change screen="01" scroll="01" />
+          </ScrollData>
+        </PLM>
+        <PLM>
+          <type>C88A</type>
+          <x>0E</x>
+          <y>16</y>
+          <arg>0090</arg>
+        </PLM>
+      </PLMs>
+      <BGdata>0000</BGdata>
+      <layer1_2>C8D1</layer1_2>
+    </State>
+  </States>
+</Room>

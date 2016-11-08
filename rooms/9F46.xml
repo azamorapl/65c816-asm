@@ -1,0 +1,134 @@
+<Room>
+  <Saves />
+  <index>0A</index>
+  <area>03</area>
+  <x>13</x>
+  <y>13</y>
+  <width>01</width>
+  <height>01</height>
+  <upscroll>70</upscroll>
+  <dnscroll>A0</dnscroll>
+  <specialGFX>00</specialGFX>
+  <Doors>
+    <Door>
+      <toroom area="03" index="08" />
+      <bitflag>00</bitflag>
+      <direction>05</direction>
+      <doortype>064E</doortype>
+      <x>04</x>
+      <y>00</y>
+      <distance>8000</distance>
+      <doorcode StartOffset="0000">
+        <Code Address="0000" OP="08" />
+        <Code Address="0001" OP="E2" ARG="20" />
+        <Code Address="0003" OP="A9" ARG="00" />
+        <Code Address="0005" OP="8F" ARG="7ECD23" />
+        <Code Address="0009" OP="A9" ARG="01" />
+        <Code Address="000B" OP="8F" ARG="7ECD24" />
+        <Code Address="000F" OP="28" />
+        <Code Address="0010" OP="60" />
+      </doorcode>
+    </Door>
+  </Doors>
+  <States>
+    <State condition="E629" conditionval="01">
+      <LevelData>00 02 03 83 03 83 03 83 03 83 03 83 03 83 03 83 03 83 03 83 03 83 03 83 03 83 03 83 03 83 03 83 03 83 23 83 23 83 23 83 23 83 23 83 23 83 23 83 23 83 23 83 23 83 23 83 23 83 23 83 23 83 23 83 23 83 00 83 20 83 06 83 06 87 22 83 00 83 20 83 06 83 06 87 22 83 00 83 20 83 06 83 06 87 22 83 00 83 01 83 02 83 CC 0A CC 0A CB 0E 44 00 CB 0A CC 0A CC 0A CB 0E 44 00 CB 0A CC 0A CC 0A 02 87 01 83 00 83 02 83 FC 02 FB 02 FC 02 FC 02 FB 02 FC 02 FC 02 FB 02 FC 02 FC 02 FB 02 FC 02 02 87 00 83 20 83 26 83 AC 02 AD 02 AC 02 AC 02 AC 02 AC 02 AC 02 AC 02 AC 02 AC 02 AD 02 AC 02 26 83 22 83 40 94 0C 04 AC 0A AC 0A AC 0A 0C 0B 0C 0B AC 0A AC 0A 0C 0B 0C 0B AC 0A AC 0A AC 0A 26 83 22 83 60 94 2C D4 0F 03 BB 02 10 03 11 03 BB 02 0E 03 0F 03 BB 02 10 03 11 03 BB 02 0E 03 26 83 22 83 60 9C 2C DC 44 00 DB 02 44 00 44 00 DB 02 44 00 44 00 DB 02 44 00 44 00 DB 02 44 00 26 83 22 83 40 9C 0C DC 2F 03 FB 02 30 03 31 03 FB 02 2E 03 2F 03 FB 02 30 03 31 03 FB 02 2E 03 26 83 22 83 20 83 26 83 AC 02 AC 02 AC 02 AC 02 AC 02 AD 02 AD 02 AC 02 AC 02 AC 02 AC 02 AC 02 26 83 22 83 00 83 02 83 44 00 44 00 BD 02 BE 02 44 00 44 00 44 00 44 00 BD 02 BE 02 44 00 44 00 02 87 00 83 01 83 02 83 CC 02 CC 02 CB 06 DE 02 CB 02 CC 02 CC 02 CB 06 DD 02 CB 02 CC 02 CC 02 02 87 01 83 05 87 05 83 05 87 05 83 05 87 05 83 05 87 05 83 05 87 05 83 05 87 05 83 05 87 05 83 05 87 05 83 3C 85 3C 81 3C 85 3C 81 3C 85 3C 81 3C 85 3C 81 3C 85 3C 81 3C 85 3C 81 3C 85 3C 81 3C 85 3C 81 3C 85 3C 81 3C 85 3C 81 3C 85 3C 81 3C 85 3C 81 3C 85 3C 81 3C 85 3C 81 3C 85 3C 81 3C 85 3C 81 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 FE 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 FD 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 </LevelData>
+      <GFXset>04</GFXset>
+      <music>0300</music>
+      <FX1s />
+      <Enemies killcount="00" />
+      <EnemyTypes />
+      <layer2scroll>0101</layer2scroll>
+      <ScrollData>01 </ScrollData>
+      <roomvar>0000</roomvar>
+      <FX2>0000</FX2>
+      <PLMs>
+        <PLM>
+          <type>C848</type>
+          <x>01</x>
+          <y>06</y>
+          <arg>0086</arg>
+        </PLM>
+      </PLMs>
+      <BGdata>E113</BGdata>
+      <layer1_2>C8D0</layer1_2>
+    </State>
+    <State condition="default">
+      <LevelData>00 02 03 83 03 83 03 83 03 83 03 83 03 83 03 83 03 83 03 83 03 83 03 83 03 83 03 83 03 83 03 83 03 83 23 83 23 83 23 83 23 83 23 83 23 83 23 83 23 83 23 83 23 83 23 83 23 83 23 83 23 83 23 83 23 83 00 83 20 83 06 83 06 87 22 83 00 83 20 83 06 83 06 87 22 83 00 83 20 83 06 83 06 87 22 83 00 83 01 83 02 83 CC 0A CC 0A CB 0E 44 00 CB 0A CC 0A CC 0A CB 0E 44 00 CB 0A CC 0A CC 0A 02 87 01 83 00 83 02 83 FC 02 FB 02 FC 02 FC 02 FB 02 FC 02 FC 02 FB 02 FC 02 FC 02 FB 02 FC 02 02 87 00 83 20 83 26 83 AC 02 AD 02 AC 02 AC 02 AC 02 AC 02 AC 02 AC 02 AC 02 AC 02 AD 02 AC 02 26 83 22 83 40 94 0C 04 AC 0A AC 0A AC 0A 0C 0B 0C 0B AC 0A AC 0A 0C 0B 0C 0B AC 0A AC 0A AC 0A 26 83 22 83 60 94 2C D4 0F 03 BB 02 10 03 11 03 BB 02 0E 03 0F 03 BB 02 10 03 11 03 BB 02 0E 03 26 83 22 83 60 9C 2C DC 44 00 DB 02 44 00 44 00 DB 02 44 00 44 00 DB 02 44 00 44 00 DB 02 44 00 26 83 22 83 40 9C 0C DC 2F 03 FB 02 30 03 31 03 FB 02 2E 03 2F 03 FB 02 30 03 31 03 FB 02 2E 03 26 83 22 83 20 83 26 83 AC 02 AC 02 AC 02 AC 02 AC 02 AD 02 AD 02 AC 02 AC 02 AC 02 AC 02 AC 02 26 83 22 83 00 83 02 83 44 00 44 00 BD 02 BE 02 44 00 44 00 44 00 44 00 BD 02 BE 02 44 00 44 00 02 87 00 83 01 83 02 83 CC 02 CC 02 CB 06 DE 02 CB 02 CC 02 CC 02 CB 06 DD 02 CB 02 CC 02 CC 02 02 87 01 83 05 87 05 83 05 87 05 83 05 87 05 83 05 87 05 83 05 87 05 83 05 87 05 83 05 87 05 83 05 87 05 83 3C 85 3C 81 3C 85 3C 81 3C 85 3C 81 3C 85 3C 81 3C 85 3C 81 3C 85 3C 81 3C 85 3C 81 3C 85 3C 81 3C 85 3C 81 3C 85 3C 81 3C 85 3C 81 3C 85 3C 81 3C 85 3C 81 3C 85 3C 81 3C 85 3C 81 3C 85 3C 81 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 FE 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 FD 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 </LevelData>
+      <GFXset>05</GFXset>
+      <music>0627</music>
+      <FX1s>
+        <FX1 default="true">
+          <surfacestart>FFFF</surfacestart>
+          <surfacenew>FFFF</surfacenew>
+          <surfacespeed>0000</surfacespeed>
+          <surfacedelay>00</surfacedelay>
+          <type>00</type>
+          <transparency1_A>02</transparency1_A>
+          <transparency2_B>02</transparency2_B>
+          <liquidflags_C>00</liquidflags_C>
+          <paletteflags>00</paletteflags>
+          <animationflags>00</animationflags>
+          <paletteblend>00</paletteblend>
+        </FX1>
+      </FX1s>
+      <Enemies killcount="00">
+        <Enemy>
+          <ID>E4BF</ID>
+          <X>0080</X>
+          <Y>0060</Y>
+          <tilemap>0000</tilemap>
+          <special>2800</special>
+          <gfx>0004</gfx>
+          <speed>0000</speed>
+          <speed2>0000</speed2>
+        </Enemy>
+        <Enemy>
+          <ID>E4FF</ID>
+          <X>0080</X>
+          <Y>0060</Y>
+          <tilemap>0000</tilemap>
+          <special>2C00</special>
+          <gfx>0004</gfx>
+          <speed>0000</speed>
+          <speed2>0001</speed2>
+        </Enemy>
+        <Enemy>
+          <ID>E53F</ID>
+          <X>0080</X>
+          <Y>0060</Y>
+          <tilemap>0000</tilemap>
+          <special>2C00</special>
+          <gfx>0004</gfx>
+          <speed>0000</speed>
+          <speed2>0002</speed2>
+        </Enemy>
+        <Enemy>
+          <ID>E57F</ID>
+          <X>0080</X>
+          <Y>0060</Y>
+          <tilemap>0000</tilemap>
+          <special>2C00</special>
+          <gfx>0004</gfx>
+          <speed>0000</speed>
+          <speed2>0003</speed2>
+        </Enemy>
+      </Enemies>
+      <EnemyTypes>
+        <Enemy>
+          <GFX>E4BF</GFX>
+          <palette>0007</palette>
+        </Enemy>
+      </EnemyTypes>
+      <layer2scroll>0101</layer2scroll>
+      <ScrollData duplicate="00">
+      </ScrollData>
+      <roomvar>0000</roomvar>
+      <FX2>0000</FX2>
+      <PLMs duplicate="00">
+      </PLMs>
+      <BGdata>E0FD</BGdata>
+      <layer1_2>C8D0</layer1_2>
+    </State>
+  </States>
+</Room>

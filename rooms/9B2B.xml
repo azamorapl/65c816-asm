@@ -1,0 +1,94 @@
+<Room>
+  <Saves />
+  <index>44</index>
+  <area>02</area>
+  <x>25</x>
+  <y>06</y>
+  <width>01</width>
+  <height>01</height>
+  <upscroll>70</upscroll>
+  <dnscroll>A0</dnscroll>
+  <specialGFX>00</specialGFX>
+  <Doors>
+    <Door>
+      <toroom area="02" index="4B" />
+      <bitflag>00</bitflag>
+      <direction>05</direction>
+      <doortype>061E</doortype>
+      <x>01</x>
+      <y>00</y>
+      <distance>8000</distance>
+      <doorcode StartOffset="0000">
+        <Code Address="0000" OP="08" />
+        <Code Address="0001" OP="E2" ARG="20" />
+        <Code Address="0003" OP="A9" ARG="01" />
+        <Code Address="0005" OP="8F" ARG="7ECD21" />
+        <Code Address="0009" OP="A9" ARG="00" />
+        <Code Address="000B" OP="8F" ARG="7ECD24" />
+        <Code Address="000F" OP="28" />
+        <Code Address="0010" OP="60" />
+      </doorcode>
+    </Door>
+    <Door>
+      <toroom area="02" index="43" />
+      <bitflag>00</bitflag>
+      <direction>07</direction>
+      <doortype>0D46</doortype>
+      <x>04</x>
+      <y>00</y>
+      <distance>01C0</distance>
+      <doorcode StartOffset="0000">
+        <Code Address="0000" OP="08" />
+        <Code Address="0001" OP="E2" ARG="20" />
+        <Code Address="0003" OP="A9" ARG="01" />
+        <Code Address="0005" OP="8F" ARG="7ECD21" />
+        <Code Address="0009" OP="8F" ARG="7ECD22" />
+        <Code Address="000D" OP="8F" ARG="7ECD23" />
+        <Code Address="0011" OP="A9" ARG="02" />
+        <Code Address="0013" OP="8F" ARG="7ECD24" />
+        <Code Address="0017" OP="A9" ARG="00" />
+        <Code Address="0019" OP="8F" ARG="7ECD26" />
+        <Code Address="001D" OP="28" />
+        <Code Address="001E" OP="60" />
+      </doorcode>
+    </Door>
+  </Doors>
+  <States>
+    <State condition="default">
+      <LevelData>00 02 0D 81 0D 81 0D 81 0D 81 14 85 05 81 63 9C 62 9C 62 98 63 98 05 85 14 81 0D 85 0D 85 0D 85 0D 85 0D 81 0D 81 0D 81 0D 81 1A 8D 05 81 43 0C 42 0C 42 08 43 08 07 85 1A 89 16 89 0D 85 0D 85 0D 85 0D 81 0D 81 0D 81 14 85 08 81 02 81 1D CC 1C 5C 1C 58 1D 58 02 85 08 85 14 81 0D 85 0D 85 0D 85 0D 81 0D 81 0D 81 14 85 05 81 FF 00 FF 00 FF 00 FF 00 FF 00 FF 00 05 85 1A 89 16 89 0D 85 0D 85 13 8D 13 8D 13 8D 1A 8D 07 81 4A C1 FF 00 FF 00 FF 00 FF 00 4A C1 02 85 08 85 1A 89 13 8D 16 89 0C 81 0C 85 08 85 08 81 02 81 4B D1 FF 00 FF 00 FF 00 FF 00 4B D1 FF 00 22 11 23 11 08 85 14 89 40 94 0C C4 22 11 22 15 FF 00 41 B1 FF 00 FF 00 FF 00 FF 00 41 B1 FF 00 FF 00 FF 00 07 85 14 89 60 94 2C D4 FF 00 FF 00 FF 00 46 D1 FF 00 FF 00 FF 00 FF 00 46 D1 FF 00 FF 00 FF 00 05 85 14 89 60 9C 2C DC FF 00 FF 00 FF 00 41 B1 FF 00 FF 00 FF 00 FF 00 41 B1 FF 00 FF 00 FF 00 07 85 14 89 40 9C 0C DC FF 00 FF 00 FF 00 46 D1 FF 00 FF 00 FF 00 FF 00 46 D1 FF 00 5D 80 FF 00 05 85 14 89 06 81 41 81 41 81 41 81 41 81 41 81 41 81 41 81 41 81 41 81 41 81 41 81 41 81 41 81 41 81 14 89 08 89 06 81 FF 80 FF 80 FF 80 46 81 FF 80 FF 80 FF 80 FF 80 46 81 FF 80 FF 80 FF 80 06 85 14 89 1A 85 07 81 FF 80 FF 80 FF 80 48 81 FF 80 FF 80 FF 80 FF 80 48 81 FF 80 FF 80 FF 80 07 85 14 89 14 8D 1D 85 1C 81 1C 81 1C 81 1C 81 20 81 29 81 28 81 20 85 1D 81 1C 81 1C 81 1C 85 1D 81 14 89 16 85 13 81 13 81 13 81 13 81 13 81 13 81 13 81 13 81 13 81 13 81 13 81 13 81 13 85 13 85 16 81 44 80 44 80 44 80 44 80 44 80 44 80 44 80 44 80 44 80 44 80 44 80 44 80 44 80 44 80 44 80 44 80 00 00 00 00 00 00 01 01 01 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 43 FF FE FD 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 06 00 00 00 00 06 00 00 00 00 00 00 00 00 00 00 FF 00 00 00 00 FF 00 96 97 00 00 00 41 96 D6 00 06 00 00 00 00 06 00 00 00 00 00 00 FF 00 00 00 FF 00 00 00 00 FF 00 00 00 00 00 00 FE 00 00 00 06 00 00 00 00 06 00 00 00 00 00 00 FD 00 00 00 FF 00 00 00 00 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 </LevelData>
+      <GFXset>09</GFXset>
+      <music>0000</music>
+      <FX1s>
+        <FX1 default="true">
+          <surfacestart>00B3</surfacestart>
+          <surfacenew>FFFF</surfacenew>
+          <surfacespeed>0000</surfacespeed>
+          <surfacedelay>00</surfacedelay>
+          <type>04</type>
+          <transparency1_A>02</transparency1_A>
+          <transparency2_B>1E</transparency2_B>
+          <liquidflags_C>82</liquidflags_C>
+          <paletteflags>1F</paletteflags>
+          <animationflags>00</animationflags>
+          <paletteblend>00</paletteblend>
+        </FX1>
+      </FX1s>
+      <Enemies killcount="00" />
+      <EnemyTypes />
+      <layer2scroll>C1C1</layer2scroll>
+      <ScrollData const="0000" />
+      <roomvar>0000</roomvar>
+      <FX2>0000</FX2>
+      <PLMs>
+        <PLM>
+          <type>EEE3</type>
+          <x>0C</x>
+          <y>08</y>
+          <arg>004B</arg>
+        </PLM>
+      </PLMs>
+      <BGdata>BF32</BGdata>
+      <layer1_2>91F7</layer1_2>
+    </State>
+  </States>
+</Room>
