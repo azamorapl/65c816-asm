@@ -54,3 +54,9 @@ This was tested on a ROM with the following characteristics:
 If applying to a modified ROM, make sure to check each source file and change whatever pointers may conflict with other hacks.
 
 The files under the [samples](/sample/) folder are provided as a proof of concept of what can be extended from this hack. They will most likely not work with anything but the vanilla ROM, so don't forget to comment them out accordingly.
+
+##Screenshots
+
+![File Select screen](/screens/fileselect.png?raw=true)
+![Special Setting screen](/screens/specialsetting.png?raw=true)
+![Sample room edit](/screens/room.png?raw=true)
