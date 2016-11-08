@@ -4,10 +4,10 @@
 
   org $A0FA00
     ScaleArmor:
-      JSL IsNormalModeEnabled : BEQ + : BMI +
+      JSL IsNormalModeEnabled : BEQ + : BMI ++
       ASL $7E0012
       BRA +
-      LSR $7E0012
+   ++ LSR $7E0012
     + LDA $09A2 ;moved
       RTS
     ScaleDamage:
