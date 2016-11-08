@@ -39,7 +39,7 @@ In order to increase compatibility with other hacks, there was care not to chang
 
 The patch has been broken into several files to allow the user to easily exclude specific behaviour. The downside is that new instructions are broken into several banks, taking (few) free space from them.
 
-It is encouraged to edit main.asm and its subfiles if you intend to use this with your hack.
+It is encouraged to edit [main.asm](/main.asm) and its [subfiles](/asm/) if you intend to use this with your hack.
 
 ##Usage
 
@@ -53,4 +53,4 @@ This was tested on a ROM with the following characteristics:
 
 If applying to a modified ROM, make sure to check each source file and change whatever pointers may conflict with other hacks.
 
-The files under the samples folder are provided as a proof of concept of what can be extended from this hack. They will most likely not work with anything but the vanilla ROM, so don't forget to comment them out accordingly.
+The files under the [samples](/sample/) folder are provided as a proof of concept of what can be extended from this hack. They will most likely not work with anything but the vanilla ROM, so don't forget to comment them out accordingly.
