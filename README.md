@@ -46,10 +46,12 @@ It is encouraged to edit [main.asm](/main.asm) and its [subfiles](/asm/) if you 
 Use [xkas](http://www.romhacking.net/utilities/269/ "Romhacking.net") to patch **main.asm** into an **unheadered** Super Metroid ROM.
 
 This was tested on a ROM with the following characteristics:
-* CRC32: D63ED5F8
-* MD5: 21F3E98DF4780EE1C667B84E57D88675
-* SHA-1: DA957F0D63D14CB441D215462904C4FA8519C613
-* SHA-256: 12B77C4BC9C1832CEE8881244659065EE1D84C70C3D29E6EAF92E6798CC2CA72
+```
+CRC32: D63ED5F8
+MD5: 21F3E98DF4780EE1C667B84E57D88675
+SHA-1: DA957F0D63D14CB441D215462904C4FA8519C613
+SHA-256: 12B77C4BC9C1832CEE8881244659065EE1D84C70C3D29E6EAF92E6798CC2CA72
+```
 
 If applying to a modified ROM, make sure to check each source file and change whatever pointers may conflict with other hacks.
 
@@ -57,6 +59,6 @@ The files under the [samples](/sample/) folder are provided as a proof of concep
 
 ##Screenshots
 
-![File Select screen](/screens/fileselect.PNG?raw=true)
-![Special Setting screen](/screens/specialsetting.PNG?raw=true)
-![Sample room edit](/screens/room.PNG?raw=true)
+![File Select screen](/screens/fileselect.PNG?raw=true "File Select screen")
+![Special Setting screen](/screens/specialsetting.PNG?raw=true "Special Setting screen")
+![Sample room edit](/screens/room.PNG?raw=true "Sample room edit")
