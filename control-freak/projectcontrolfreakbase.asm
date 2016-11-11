@@ -2,6 +2,16 @@ lorom
 
 ;apply project base, control freak, this patch
 
+;;disable backflip?
+org $11A6F0
+	; 2 bytes
+	db $FF,$FF
+
+
+org $11A740
+	; 2 bytes
+	db $FF,$FF
+
 ;==========spinjump restart======================
 org $90F63A	;clearing some pb spinjump leftovers
 	db $FF,$FF,$FF,$FF,$FF,$FF
@@ -441,6 +451,7 @@ DW $0000,$0800,$0004	;pb/cf	(hold [UP] to aim up)
 ;;;DW $0000,$0020,$0008	;pb	(hold [L] to aim downleft)
 DW $0000,$0010,$0008	;cf	(hold [R] to aim downleft)
 DW $FFFF
+
 ;-------------------------------------------------------------------------------------------------------
 T0B:	;= Moving right, gun extended forward (not aiming)
 DW $0400,$0000,$0035	;pb/cf	(press [DOWN] to crouch)
@@ -515,6 +526,7 @@ DW $0000,$0040,$0014	;pb/cf	(hold [X] to extend gun)
 DW $FFFF
 ;-------------------------------------------------------------------------------------------------------
 T15:	;= Normal jump facing right, aiming up
+DW $0080,$0000,$0019	;pb	(press [A] to spinjump)
 DW $0000,$0910,$0015	;cf	(hold [R+(UP+RIGHT)] to aim up)
 DW $0000,$0900,$0069	;cf	(hold [UP+RIGHT] to aim upright)
 DW $0000,$0190,$0015	;cf	(hold [R+(RIGHT+A)] to jump aiming up)
@@ -532,6 +544,7 @@ DW $FFFF
 ;-------------------------------------------------------------------------------------------------------
 T4D:	;= Normal jump facing right, gun not extended, not aiming, not moving
 T51:	;= Normal jump facing right, moving forward (gun extended)
+DW $0080,$0000,$0019	;pb	(press [A] to spinjump)
 DW $0000,$0910,$0015	;cf	(hold [R+(UP+RIGHT)] to aim up)
 DW $0000,$0900,$0069	;cf	(hold [UP+RIGHT] to aim upright)
 DW $0000,$0500,$006B	;cf	(hold [DOWN+RIGHT] to aim downright)
@@ -548,6 +561,7 @@ DW $0000,$0040,$0013	;cf	(hold [X] to fire)
 DW $FFFF
 ;-------------------------------------------------------------------------------------------------------
 T69:	;= Normal jump facing right, aiming upright. Moving optional
+DW $0080,$0000,$0019	;pb	(press [A] to spinjump)
 DW $0000,$0200,$002F	;cf	(hold [LEFT] to turn left)
 DW $0800,$0010,$0015	;cf	(press [UP] & hold [R] to aim up)
 DW $0400,$0010,$006B	;cf	(press [DOWN] & hold [R] to aim downright)
@@ -584,6 +598,7 @@ DW $0000,$0040,$0013	;pb/cf	(hold [X] to fire)
 DW $FFFF
 ;-------------------------------------------------------------------------------------------------------
 T16:	;= Normal jump facing left, aiming up
+DW $0080,$0000,$001A	;pb	(press [A] to spinjump)
 DW $0000,$0A10,$0016	;cf	(hold [R+(UP+LEFT)] to aim up)
 DW $0000,$0A00,$006A	;cf	(hold [UP+LEFT] to aim upleft)
 DW $0000,$0290,$0016	;cf	(hold [R+(LEFT+A)] to jump aiming up)
@@ -601,6 +616,7 @@ DW $FFFF
 ;-------------------------------------------------------------------------------------------------------
 T4E:	;= Normal jump facing left, gun not extended, not aiming, not moving
 T52:	;= Normal jump facing left, moving forward (gun extended)
+DW $0080,$0000,$001A	;pb	(press [A] to spinjump)
 DW $0000,$0A10,$0016	;cf	(hold [R+(UP+LEFT)] to aim up)
 DW $0000,$0A00,$006A	;cf	(hold [UP+LEFT] to aim upleft)
 DW $0000,$0600,$006C	;cf	(hold [DOWN+LEFT] to aim downleft)
@@ -617,6 +633,7 @@ DW $0000,$0040,$0014	;cf	(hold [X] to fire)
 DW $FFFF
 ;-------------------------------------------------------------------------------------------------------
 T6A:	;= Normal jump facing left, aiming upleft. Moving optional
+DW $0080,$0000,$001A	;pb	(press [A] to spinjump)
 DW $0000,$0100,$0030	;cf	(hold [RIGHT] to turn right)
 DW $0800,$0010,$0016	;cf	(press [UP] & hold [R] to aim up)
 DW $0400,$0010,$006C	;cf	(press [DOWN] & hold [R] to aim downleft)
@@ -800,11 +817,11 @@ T22:	;= Spinjump right. Unused?
 T23:	;= Spinjump right. Unused?
 T24:	;= Spinjump right. Unused?
 T2F:	;= Starting with normal jump facing right, turning left
-DW $0000,$0280,$0050	;pb	(hold [LEFT+A] to roll back)
-DW $FFFF
+;DW $0000,$0280,$0050	;pb	(hold [LEFT+A] to roll back)
+;DW $FFFF
 T30:	;= Starting with normal jump facing left, turning right
-DW $0000,$0180,$004F	;pb	(hold [RIGHT+A] to roll back)
-DW $FFFF
+;DW $0000,$0180,$004F	;pb	(hold [RIGHT+A] to roll back)
+;DW $FFFF
 ;-------------------------------------------------------------------------------------------------------
 T33:	;= Spinjump right. Unused?
 T34:	;= Spinjump right. Unused?
@@ -826,11 +843,11 @@ T44:	;= Starting from crouching left, turning right
 T47:	;= Standing, facing right. Unused?
 T48:	;= Standing, facing left. Unused?
 T4B:	;= Normal jump transition from ground (standing or crouching), facing right
-DW $0000,$0280,$0050	;pb	(hold [LEFT+A] to roll back)
-DW $FFFF
+;DW $0000,$0280,$0050	;pb	(hold [LEFT+A] to roll back)
+;DW $FFFF
 T4C:	;= Normal jump transition from ground (standing or crouching), facing left
-DW $0000,$0180,$004F	;pb	(hold [RIGHT+A] to roll back)
-DW $FFFF
+;DW $0000,$0180,$004F	;pb	(hold [RIGHT+A] to roll back)
+;DW $FFFF
 ;-------------------------------------------------------------------------------------------------------
 T55:	;= Normal jump transition from ground, facing right and aiming up
 T56:	;= Normal jump transition from ground, facing left and aiming up
@@ -1087,6 +1104,7 @@ DW $0000,$0100,$0029	;pb/cf	(hold [RIGHT] to move right)
 DW $FFFF
 ;-------------------------------------------------------------------------------------------------------
 T29:	;= Falling facing right, normal pose
+DW $0080,$0000,$0019
 DW $0000,$0200,$0087	;cf	(hold [LEFT] to turn left)
 DW $0000,$0810,$002B	;cf	(hold [R+UP] to aim up)
 DW $0000,$0900,$006D	;cf	(hold [UP+LEFT] to aim upright)
@@ -1100,6 +1118,7 @@ DW $0000,$0100,$0029	;cf	(hold [RIGHT] to move right)
 DW $FFFF
 ;-------------------------------------------------------------------------------------------------------
 T6D:	;= Falling facing right, aiming upright
+DW $0080,$0000,$0019
 DW $0000,$0200,$0087	;cf	(hold [LEFT] to turn left)
 DW $0800,$0010,$002B	;cf	(press [UP] & hold [R] to aim up)
 DW $0400,$0010,$006F	;cf	(press [DOWN] & hold [R] to aim downright)
@@ -1113,6 +1132,7 @@ DW $0000,$0100,$0029	;cf	(hold [RIGHT] to move right)
 DW $FFFF
 ;-------------------------------------------------------------------------------------------------------
 T2B:	;= Falling facing right, aiming up
+DW $0080,$0000,$0019
 DW $0000,$0200,$0087	;cf	(hold [LEFT] to turn left)
 DW $0400,$0010,$006D	;cf	(press [DOWN] & hold [R] to aim upright)
 DW $0000,$0010,$002B	;cf	(hold [R] to aim up)
@@ -1160,6 +1180,7 @@ DW $0000,$0200,$002A	;pb/cf	(hold [LEFT] to move left)
 DW $FFFF
 ;-------------------------------------------------------------------------------------------------------
 T2A:	;= Falling facing left, normal pose
+DW $0080,$0000,$001A
 DW $0000,$0100,$0088	;cf	(hold [RIGHT] to turn right)
 DW $0000,$0810,$002C	;cf	(hold [R+UP] to aim up)
 DW $0000,$0A00,$006E	;cf	(hold [UP+LEFT] to aim upleft)
@@ -1173,6 +1194,7 @@ DW $0000,$0200,$002A	;cf	(hold [LEFT] to move left)
 DW $FFFF
 ;-------------------------------------------------------------------------------------------------------
 T6E:	;= Falling facing left, aiming upleft
+DW $0080,$0000,$001A
 DW $0000,$0100,$0088	;cf	(hold [RIGHT] to turn right)
 DW $0800,$0010,$002C	;cf	(press [UP] & hold [R] to aim up)
 DW $0400,$0010,$0070	;cf	(press [DOWN] & hold [R] to aim downleft)
@@ -1186,6 +1208,7 @@ DW $0000,$0200,$002A	;cf	(hold [LEFT] to move left)
 DW $FFFF
 ;-------------------------------------------------------------------------------------------------------
 T2C:	;= Falling facing left, aiming up
+DW $0080,$0000,$001A
 DW $0000,$0100,$0088	;cf	(hold [RIGHT] to turn right)
 DW $0000,$0010,$002C	;cf	(hold [R] to aim up)
 DW $0400,$0010,$006E	;cf	(press [DOWN] & hold [R] to aim upleft)
@@ -1294,7 +1317,6 @@ T79:	;= Spring ball on ground, facing right
 T7B:	;= Spring ball on ground, moving right
 DW $0800,$0000,$003D	;pb/cf	(press [UP] to demorph)
 DW $0080,$0000,$007F	;pb/cf	(press [A] to jump)
-DW $FFFF
 T7A:	;= Spring ball on ground, facing left
 T7C:	;= Spring ball on ground, moving left
 DW $0800,$0000,$003E	;pb/cf	(press [UP] to demorph)
