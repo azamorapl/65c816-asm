@@ -3,52 +3,48 @@ lorom
 !timer = $1F60		;unused stack
 
 org $91FDE7    		;morphin'
-	JSL Morph : NOP
+	JSR FREESPACE
 
-org $91ECFB      	;unmorphin'
-	JSL UnMorph : NOP #2
+org $91ECFE      	;unmorphin'
+	JSR FREESPACE
 
-org $90FB7A
-Morph:
-    PHA : PHX : PHY : PHB : PHD : PHP
-    JSL CHECK
-    PLP : PLD : PLB : PLY : PLX : PLA
-    STA $0B00 : LDA $12 ;moved
-    RTL
-UnMorph:
-    PHA : PHX : PHY : PHB : PHD : PHP
+org $91FFEE	
+
+FREESPACE:
+	STA $0B00
 	JSL CHECK
-    PLP : PLD : PLB : PLY : PLX : PLA
-    AND #$00FF : STA $0B00 ;moved
-	RTL
+	RTS
 
 
 org $A0868F ;main hijack point, runs every frame
 
 JSR $FFB0
 
-
+		
 org $A0FFB0 ; push stuff in case it's needed later
-PHA : PHX : PHY
+PHA
+PHX
+PHY
 JSL MORPH_FLASH
-PLY : PLX : PLA
+PLY
+PLX
+PLA
 LDA $1840 ;pull stuff after the routine is run and do what the hijack jump overwrote
 RTS
 
 org $85A000
 CHECK:
 		PHA
-		CMP #$0007
+		CMP #$0007      
 		BNE +
 		LDA #$0015
 		STA !timer
-		 ;LDA #$001C
-		 ;JSL $809143
-         ;33 ;3a ;3f
-		 LDA #$0018
-		 JSL $8090C1		;play sound
-		 ;LDA #$0040
-		 ;JSL $8090C1		;play sound
+		; LDA #$001C
+		; JSL $809143
+		; LDA #$0040
+		; JSL $8090C1		;play sound
+		; LDA #$0044
+		; JSL $8090C1		;play sound
 +
 		PLA
 		RTL
@@ -99,7 +95,7 @@ QUIT:                           ;at the end, pull stuff that was once pushed (ve
 ;9920 is the start of varia suit charge palette, 0x9820 + 0x0100
 ;9A20 is start start of gravity suit charge palette 0x9820 + 0x0200
 
-
+ 
 
 FLASH_PATTERN:
 
