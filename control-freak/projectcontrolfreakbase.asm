@@ -160,7 +160,7 @@ TE6:	;= Landing from normal jump, facing right, firing
 DW $0080,$0800,$0055	;pb	(press [A] & hold [UP] to jump off ground right aiming up)
 DW $0080,$0010,$0057	;pb	(press [A] & hold [R] to jump off ground right aiming upright)
 ;;;DW $0080,$0020,$0059	;pb	(press [A] & hold [L] to Jump off ground right aiming downright)
-DW $0080,$8000,$0019	;pb	(press [A] & hold [B] to spinjump right)
+;DW $0080,$8000,$0019	;pb	(press [A] & hold [B] to spinjump right)
 DW $0080,$0000,$004B	;pb	(press [A] to jump off ground right)
 ;;;DW $0400,$0030,$00F1	;pb	(press [DOWN] & hold [L+R] to crouch right aiming up)
 ;;;DW $0400,$0010,$00F3	;pb	(press [DOWN] & hold [R] to crouch right aiming upright)
@@ -240,7 +240,7 @@ DW $FFFF
 ;-------------------------------------------------------------------------------------------------------
 TD2:	;= Samus ran left into a wall, is still holding left and is now aiming diagonal down
 DW $0000,$4400,$0038	;pb	(hold [DOWN+Y] to morph)
-DW $0080,$8000,$001A	;pb	(press [A] & hold [B] to spinjump)
+;DW $0080,$8000,$001A	;pb	(press [A] & hold [B] to spinjump)
 DW $0080,$0000,$004C	;pb	(press [A] to jump)
 DW $0000,$0A00,$0010	;pb	(hold [UP+LEFT] to aim upleft)
 DW $0000,$0600,$0012	;pb	(hold [DOWN+LEFT] to aim downleft)
@@ -281,7 +281,7 @@ DW $0080,$0800,$0056	;pb/cf	(press [A] & hold [UP] to jump aiming up)
 DW $0080,$0010,$0058	;pb/cf	(press [A] & hold [R] to jump aiming upleft)
 ;;;DW $0080,$0020,$005A	;pb	(press [A] & hold [L] to jump aiming downleft)
 DW $0080,$0410,$005A	;cf	(press [A] & hold [R+DOWN] to jump aiming downleft)
-DW $0080,$8000,$001A	;pb	(press [A] & hold [B] to spinjump left)
+;DW $0080,$8000,$001A	;pb	(press [A] & hold [B] to spinjump left)
 DW $0080,$0000,$004C	;pb/cf	(press [A] to jump)
 ;;;DW $0400,$0030,$00F2	;pb	(press [DOWN] & hold [L+R] to crouch aiming up)
 ;;;DW $0400,$0010,$00F4	;pb	(press [DOWN] & hold [R] to crouch aiming upleft)
@@ -800,12 +800,12 @@ DW $FFFF
 T1D:	;= Facing right as morphball, no springball
 T1E:	;= Moving right as a morphball on ground without springball
 DW $0800,$0000,$003D	;pb/cf	(press [UP] to demorph)
-DW $0080,$8000,$0019	;pb	(press [A] & hold [B] to spinjump)
+;DW $0080,$8000,$0019	;pb	(press [A] & hold [B] to spinjump)
 DW $0080,$0000,$003D	;pb/cf	(press [A] to demorph)
 T1F:	;= Moving left as a morphball on ground without springball
 T41:	;= Staying still with morphball, facing left, no springball
 DW $0800,$0000,$003E	;pb/cf	(press [UP] to demorph)
-DW $0080,$8000,$001A	;pb	(press [A] & hold [B] to spinjump)
+;DW $0080,$8000,$001A	;pb	(press [A] & hold [B] to spinjump)
 DW $0080,$0000,$003E	;pb/cf	(press [A] to demorph)
 DW $0000,$0100,$001E	;pb/cf	(hold [RIGHT] to move right)
 DW $0000,$0200,$001F	;pb/cf	(hold [LEFT] to move left)
