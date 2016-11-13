@@ -8,7 +8,7 @@ org $91FDE7    		;morphin'
 org $91ECFB      	;unmorphin'
 	JSL UnMorph : NOP #2
 
-org $90FB7A
+org $90FBA0
 Morph:
     PHA : PHX : PHY : PHB : PHD : PHP
     JSL CHECK
