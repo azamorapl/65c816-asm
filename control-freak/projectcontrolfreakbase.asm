@@ -160,7 +160,7 @@ TE6:	;= Landing from normal jump, facing right, firing
 DW $0080,$0800,$0055	;pb	(press [A] & hold [UP] to jump off ground right aiming up)
 DW $0080,$0010,$0057	;pb	(press [A] & hold [R] to jump off ground right aiming upright)
 ;;;DW $0080,$0020,$0059	;pb	(press [A] & hold [L] to Jump off ground right aiming downright)
-;DW $0080,$8000,$0019	;pb	(press [A] & hold [B] to spinjump right)
+DW $0080,$8000,$0019	;pb	(press [A] & hold [B] to spinjump right) ;might want to disable for auto-run
 DW $0080,$0000,$004B	;pb	(press [A] to jump off ground right)
 ;;;DW $0400,$0030,$00F1	;pb	(press [DOWN] & hold [L+R] to crouch right aiming up)
 ;;;DW $0400,$0010,$00F3	;pb	(press [DOWN] & hold [R] to crouch right aiming upright)
@@ -240,7 +240,7 @@ DW $FFFF
 ;-------------------------------------------------------------------------------------------------------
 TD2:	;= Samus ran left into a wall, is still holding left and is now aiming diagonal down
 DW $0000,$4400,$0038	;pb	(hold [DOWN+Y] to morph)
-;DW $0080,$8000,$001A	;pb	(press [A] & hold [B] to spinjump)
+DW $0080,$8000,$001A	;pb	(press [A] & hold [B] to spinjump) ;might want to disable for auto-run
 DW $0080,$0000,$004C	;pb	(press [A] to jump)
 DW $0000,$0A00,$0010	;pb	(hold [UP+LEFT] to aim upleft)
 DW $0000,$0600,$0012	;pb	(hold [DOWN+LEFT] to aim downleft)
@@ -256,6 +256,7 @@ DW $FFFF
 T08:	;= Facing left, aiming downleft
 TE5:	;= Landing from normal jump, facing left and aiming downleft
 DW $0880,$0810,$0058	;cf	(press [UP+A] & hold [R+UP] to jump aiming upleft)
+DW $0080,$8000,$001A	;pb	(press [A] & hold [B] to spinjump) ;might want to disable for auto-run
 DW $0080,$0800,$0056	;cf	(press [A] & hold [UP] to jump aiming up)
 DW $0080,$0010,$005A	;cf	(press [A] & hold [R] to jump aiming downleft)
 DW $0080,$0000,$004C	;cf	(press [A] to jump)
@@ -281,7 +282,7 @@ DW $0080,$0800,$0056	;pb/cf	(press [A] & hold [UP] to jump aiming up)
 DW $0080,$0010,$0058	;pb/cf	(press [A] & hold [R] to jump aiming upleft)
 ;;;DW $0080,$0020,$005A	;pb	(press [A] & hold [L] to jump aiming downleft)
 DW $0080,$0410,$005A	;cf	(press [A] & hold [R+DOWN] to jump aiming downleft)
-;DW $0080,$8000,$001A	;pb	(press [A] & hold [B] to spinjump left)
+DW $0080,$8000,$001A	;pb	(press [A] & hold [B] to spinjump left) ;might want to disable for auto-run
 DW $0080,$0000,$004C	;pb/cf	(press [A] to jump)
 ;;;DW $0400,$0030,$00F2	;pb	(press [DOWN] & hold [L+R] to crouch aiming up)
 ;;;DW $0400,$0010,$00F4	;pb	(press [DOWN] & hold [R] to crouch aiming upleft)
@@ -358,7 +359,7 @@ DW $0000,$0800,$0003	;cf	(hold [UP] to aim up)
 DW $FFFF
 ;-------------------------------------------------------------------------------------------------------
 T11:	;= Moving right, aiming downright
-DW $0000,$4400,$0037	;pb	(hold [DOWN+Y] to morph)
+DW $0000,$4400,$0037	;pb	(hold [DOWN+Y] to F)
 DW $0400,$0010,$00F5	;cf	(press [DOWN] & hold [R] to aim downright)
 DW $0400,$0000,$0035	;pb/cf	(press [DOWN] to crouch)
 DW $0080,$0000,$0019	;pb/cf	(press [A] to spinjump)
@@ -728,7 +729,7 @@ DW $0000,$0180,$0019	;pb	(hold [RIGHT+A] to spinjump)
 DW $0000,$0800,$0015	;pb/cf	(hold [UP] to aim up)
 DW $0000,$0010,$0069	;pb/cf	(hold [R] to aim upright)
 ;;;DW $0000,$0020,$006B	;pb	(hold [L] to aim downright)
-DW $0000,$4400,$0031	;pb	(hold [DOWN+Y] to morph (midair no springball???))
+;not in the original DW $0000,$4400,$0031	;pb	(hold [DOWN+Y] to morph (midair no springball???))
 DW $0000,$0400,$0017	;pb/cf	(hold [DOWN] to aim down)
 DW $0000,$0100,$0019	;pb/cf	(hold [RIGHT] to spinjump)
 DW $0000,$0200,$001A	;pb/cf	(hold [LEFT] to spinjump)
@@ -749,7 +750,7 @@ DW $0000,$0010,$006A	;pb/cf	(hold [R] to aim upleft)
 DW $0000,$0810,$0016	;cf	(hold [R+UP] to aim up)
 DW $0000,$0410,$006C	;cf	(hold [R+DOWN] to aim downleft)
 ;;;DW $0000,$0020,$006C	;pb	(hold [L] to aim downleft)
-DW $0000,$4400,$0032	;pb	(hold [DOWN+Y] to morph (midair no springball???))
+; not in the original DW $0000,$4400,$0032	;pb	(hold [DOWN+Y] to morph (midair no springball???))
 DW $0000,$0400,$0018	;pb/cf	(hold [DOWN] to aim down)
 DW $0000,$0200,$001A	;pb/cf	(hold [LEFT] to spinjump)
 DW $0000,$0100,$0019	;pb/cf	(hold [RIGHT] to spinjump)
@@ -762,7 +763,7 @@ DW $0040,$0500,$006B	;cf	(press [X] & hold [DOWN+RIGHT] to fire aiming downright
 DW $0040,$0400,$0017	;cf	(press [X] & hold [DOWN] to fire aiming down)
 ;;;DW $0000,$0840,$0015	;pb	(hold [UP+X] to fire aiming up)
 ;;;DW $0000,$0440,$0017	;pb	(hold [DOWN+X] to fire aiming down)
-DW $0000,$4400,$0031	;pb	(hold [DOWN+Y] to morph (midair no springball???))
+;not in the original DW $0000,$4400,$0031	;pb	(hold [DOWN+Y] to morph (midair no springball???))
 ;;;DW $0000,$0050,$0069	;pb	(hold [R+X] to fire aiming upright)
 ;;;DW $0000,$0060,$006B	;pb	(hold [L+X] to fire aiming downright)
 DW $0000,$0180,$001B	;pb	(hold [RIGHT+A] to space jump)
@@ -783,7 +784,7 @@ DW $0040,$0600,$006C	;cf	(press [X] & hold [DOWN+LEFT] to fire aiming downleft)
 DW $0040,$0400,$0018	;cf	(press [X] & hold [DOWN] to fire aiming down)
 ;;;DW $0000,$0840,$0016	;pb	(hold [UP+X] to fire aiming up)
 ;;;DW $0000,$0440,$0018	;pb	(hold [DOWN+X] to fire aiming down)
-DW $0000,$4400,$0032	;pb	(hold [DOWN+Y] to morph (midair no springball???))
+;not in the originalDW $0000,$4400,$0032	;pb	(hold [DOWN+Y] to morph (midair no springball???))
 ;;;DW $0000,$0050,$006A	;pb	(hold [R+X] to fire aiming upleft)
 ;;;DW $0000,$0060,$006C	;pb	(hold [L+X] to fire aiming downleft)
 DW $0000,$0280,$001C	;pb	(hold [LEFT+A] to space jump)
@@ -800,12 +801,12 @@ DW $FFFF
 T1D:	;= Facing right as morphball, no springball
 T1E:	;= Moving right as a morphball on ground without springball
 DW $0800,$0000,$003D	;pb/cf	(press [UP] to demorph)
-;DW $0080,$8000,$0019	;pb	(press [A] & hold [B] to spinjump)
+DW $0080,$8000,$0019	;pb	(press [A] & hold [B] to spinjump) ;might want to disable for auto-run
 DW $0080,$0000,$003D	;pb/cf	(press [A] to demorph)
 T1F:	;= Moving left as a morphball on ground without springball
 T41:	;= Staying still with morphball, facing left, no springball
 DW $0800,$0000,$003E	;pb/cf	(press [UP] to demorph)
-;DW $0080,$8000,$001A	;pb	(press [A] & hold [B] to spinjump)
+DW $0080,$8000,$001A	;pb	(press [A] & hold [B] to spinjump) ;might want to disable for auto-run
 DW $0080,$0000,$003E	;pb/cf	(press [A] to demorph)
 DW $0000,$0100,$001E	;pb/cf	(hold [RIGHT] to move right)
 DW $0000,$0200,$001F	;pb/cf	(hold [LEFT] to move left)
@@ -1105,6 +1106,7 @@ DW $FFFF
 ;-------------------------------------------------------------------------------------------------------
 T29:	;= Falling facing right, normal pose
 DW $0080,$0000,$0019
+DW $0000,$4400,$0037	;pb	(hold [DOWN+Y] to morph)
 DW $0000,$0200,$0087	;cf	(hold [LEFT] to turn left)
 DW $0000,$0810,$002B	;cf	(hold [R+UP] to aim up)
 DW $0000,$0900,$006D	;cf	(hold [UP+LEFT] to aim upright)
@@ -1119,6 +1121,7 @@ DW $FFFF
 ;-------------------------------------------------------------------------------------------------------
 T6D:	;= Falling facing right, aiming upright
 DW $0080,$0000,$0019
+DW $0000,$4400,$0037	;pb	(hold [DOWN+Y] to morph)
 DW $0000,$0200,$0087	;cf	(hold [LEFT] to turn left)
 DW $0800,$0010,$002B	;cf	(press [UP] & hold [R] to aim up)
 DW $0400,$0010,$006F	;cf	(press [DOWN] & hold [R] to aim downright)
@@ -1133,6 +1136,7 @@ DW $FFFF
 ;-------------------------------------------------------------------------------------------------------
 T2B:	;= Falling facing right, aiming up
 DW $0080,$0000,$0019
+DW $0000,$4400,$0037	;pb	(hold [DOWN+Y] to morph)
 DW $0000,$0200,$0087	;cf	(hold [LEFT] to turn left)
 DW $0400,$0010,$006D	;cf	(press [DOWN] & hold [R] to aim upright)
 DW $0000,$0010,$002B	;cf	(hold [R] to aim up)
@@ -1164,6 +1168,7 @@ DW $FFFF
 ;-------------------------------------------------------------------------------------------------------
 T2E:	;= Falling facing left, aiming down
 DW $0080,$0000,$001A	;pb	(press [A] to spinjump)
+; not in original DW $0000,$4400,$0037	;pb	(hold [DOWN+Y] to morph)
 DW $0400,$0000,$0038	;pb/cf	(press [DOWN] to morph)
 DW $0000,$0810,$002C	;cf	(hold [R+UP] to aim up)
 DW $0000,$0410,$0070	;cf	(hold [R+DOWN] to aim downleft)
@@ -1181,6 +1186,7 @@ DW $FFFF
 ;-------------------------------------------------------------------------------------------------------
 T2A:	;= Falling facing left, normal pose
 DW $0080,$0000,$001A
+DW $0000,$4400,$0038	;pb	(hold [DOWN+Y] to morph)
 DW $0000,$0100,$0088	;cf	(hold [RIGHT] to turn right)
 DW $0000,$0810,$002C	;cf	(hold [R+UP] to aim up)
 DW $0000,$0A00,$006E	;cf	(hold [UP+LEFT] to aim upleft)
@@ -1195,6 +1201,7 @@ DW $FFFF
 ;-------------------------------------------------------------------------------------------------------
 T6E:	;= Falling facing left, aiming upleft
 DW $0080,$0000,$001A
+DW $0000,$4400,$0038	;pb	(hold [DOWN+Y] to morph)
 DW $0000,$0100,$0088	;cf	(hold [RIGHT] to turn right)
 DW $0800,$0010,$002C	;cf	(press [UP] & hold [R] to aim up)
 DW $0400,$0010,$0070	;cf	(press [DOWN] & hold [R] to aim downleft)
@@ -1209,6 +1216,7 @@ DW $FFFF
 ;-------------------------------------------------------------------------------------------------------
 T2C:	;= Falling facing left, aiming up
 DW $0080,$0000,$001A
+DW $0000,$4400,$0037	;pb	(hold [DOWN+Y] to morph)
 DW $0000,$0100,$0088	;cf	(hold [RIGHT] to turn right)
 DW $0000,$0010,$002C	;cf	(hold [R] to aim up)
 DW $0400,$0010,$006E	;cf	(press [DOWN] & hold [R] to aim upleft)
@@ -1349,7 +1357,7 @@ DW $0040,$0400,$0017	;cf	(press [X] & hold [DOWN] to aim down)
 ;;;DW $0000,$0840,$0015	;pb	(hold [UP+X] to aim up)
 DW $0000,$0810,$0015	;cf	(hold [R+UP] to aim up)
 ;;;DW $0000,$0440,$0017	;pb	(hold [DOWN+X] to fire aiming down)
-DW $0000,$4400,$0031	;pb	(hold [DOWN+Y] to morph)
+;not in the original DW $0000,$4400,$0031	;pb	(hold [DOWN+Y] to morph)
 ;;;DW $0000,$0050,$0069	;pb	(hold [R+X] to aim upright)
 ;;;DW $0000,$0060,$006B	;pb	(hold [L+X] to aim downright)
 DW $0000,$0180,$0081	;pb	(hold [RIGHT+A] to screw attack)
@@ -1370,7 +1378,7 @@ DW $0040,$0400,$0018	;cf	(press [X] & hold [DOWN] to aim down)
 ;;;DW $0000,$0840,$0016	;pb	(hold [UP+X] to aim up)
 DW $0000,$0810,$0016	;cf	(hold [R+UP] to aim up)
 ;;;DW $0000,$0440,$0018	;pb	(hold [DOWN+X] to fire aiming down)
-DW $0000,$4400,$0032	;pb	(hold [DOWN+Y] to morph)
+;not in the original DW $0000,$4400,$0032	;pb	(hold [DOWN+Y] to morph)
 ;;;DW $0000,$0050,$006A	;pb	(hold [R+X] to aim upleft)
 ;;;DW $0000,$0060,$006C	;pb	(hold [L+X] to aim downleft)
 DW $0000,$0280,$0082	;pb	(hold [LEFT+A] to screw attack)
