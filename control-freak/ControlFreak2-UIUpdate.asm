@@ -23,7 +23,16 @@ org $90C4B8
 	JSR PaintWeapon
 
 org $90DDCA
-	JSR PaintXray
+	BIT $09B8
+
+org $888735
+	JSL PaintXray : NOP
+
+org $888757
+	JSL PaintXray : NOP
+
+org $8887AE
+	JSL PaintXray : NOP
 
 org $90C4C7
 	JSR SkipPowerBomb : NOP
@@ -62,6 +71,7 @@ org $90FAD1:
 	PaintBomb:
 		PHA : PHX : PHY : PHB : PHD : PHP
 		LDX !Disabled : LDA !SelectedItem : JSL PaintHudItem
+		LDX !Disabled : LDA !XRay : JSL PaintHudItem
 		LDA $09BC : BIT $97 : BNE +
 		LDX !Green : BRA ++
 	+	LDX !Yellow
@@ -71,20 +81,20 @@ org $90FAD1:
 		RTS
 	PaintXray:
 		PHA : PHX : PHY : PHB : PHD : PHP
-		BIT $09B8 : BNE +
+		LDA $8B : BIT $09B8 : BNE +
 		LDX !Disabled : BRA ++
 	+	LDX !Yellow
 	++	LDA !XRay : JSL PaintHudItem
 		PLP : PLD : PLB : PLY : PLX : PLA
-		BIT $09B8 ;moved
-		RTS
+		LDA $8B : BIT $09B8 ;moved
+		RTL
 	SkipPowerBomb:
-		LDA $0A04 : INC A ;moved
+		LDA !SelectedItem : INC A ;moved
 		CMP !PowerBomb
 		BNE +
 		INC
 	+	RTS
 	ForceSelect:
-		LDA $7E0A04 : BNE +
+		LDA !SelectedItem : BNE +
 		JSR !SelectionHackAddress
 	+	RTL
