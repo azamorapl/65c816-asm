@@ -2,6 +2,7 @@
   !SuperMissileExpansionAmount = $02
   !PowerBombExpansionAmount = $02
   !MissilesForRedDoor = $01
+  !CrystalFlashMinBombs = $09
   !HoursForBadEnding = $06
 
   org $84E102 : DB !SuperMissileExpansionAmount
@@ -18,4 +19,5 @@
   org $8BF559 : DB !HoursForBadEnding
   org $8BF59B : DB !HoursForBadEnding
   org $8BF5BE : DB !HoursForBadEnding
+  org $10D5E7 : DB !CrystalFlashMinBombs
 }
