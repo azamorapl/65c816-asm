@@ -37,6 +37,10 @@ org $8887AE
 org $90C4C7
 	JSR SkipPowerBomb : NOP
 
+org $90CCC0
+	CheckPowerBombCombo:
+		LDA $8B : BIT $09BA : NOP : BNE $02
+
 org $80FA90
 	PaintHudItem:
 		PHK : PLB
@@ -90,9 +94,7 @@ org $90FAD1:
 		RTL
 	SkipPowerBomb:
 		LDA !SelectedItem : INC A ;moved
-		CMP !PowerBomb
-		BNE +
-		INC
+		CMP !PowerBomb : BNE + : INC
 	+	RTS
 	ForceSelect:
 		LDA !SelectedItem : BNE +
