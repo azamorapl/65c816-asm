@@ -3,12 +3,12 @@ lorom
 ;apply project base, control freak, this patch
 
 ;;disable backflip?
-org $11A6F0
+org $91A6F0
 	; 2 bytes
 	db $FF,$FF
 
 
-org $11A740
+org $91A740
 	; 2 bytes
 	db $FF,$FF
 
