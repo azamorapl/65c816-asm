@@ -10,36 +10,16 @@ LoRom
 !PowerBomb = #$0003
 !XRay = #$0005
 
-org $91E14A
-	JSL CheckMissileOnLoad : NOP #2
-
-org $8489CB
-	JSR CheckMissileOnGet : NOP
-
-org $90BFA3
-	JSR PaintBomb
-
-org $90C4B8
-	JSR PaintWeapon
-
-org $90DDCA
-	BIT $09B8
-
-org $888735
-	JSL PaintXray : NOP
-
-org $888757
-	JSL PaintXray : NOP
-
-org $8887AE
-	JSL PaintXray : NOP
-
-org $90C4C7
-	JSR SkipPowerBomb : NOP
-
-org $90CCC0
-	CheckPowerBombCombo:
-		LDA $8B : BIT $09BA : NOP : BNE $02
+org $91E14A : JSL CheckMissileOnLoad : NOP #2
+org $8489CB : JSR CheckMissileOnGet : NOP
+org $90BFA3 : JSR PaintBomb
+org $90C4B8 : JSR PaintWeapon
+org $90DDCA : BIT $09B8
+org $888735 : JSL PaintXray : NOP
+org $888757 : JSL PaintXray : NOP
+org $8887AE : JSL PaintXray : NOP
+org $90C4C7 : JSR SkipPowerBomb : NOP
+org $90CCC0 : NOP : LDA $09B6 : BIT $8F : BNE $02
 
 org $80FA90
 	PaintHudItem:
