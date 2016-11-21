@@ -9,7 +9,7 @@ org $91B61F : DW !RunDelay,$0001,!BoostDelay,$0001,$0002
 org $90855E : BRA $1D
 
 ;lower to reduce brinstar gate trigger range
-;org $A19A6C : DB $90
+;org $A19A6C : DB $80 ;was $90
 ;org $A19A7C : DB $90
 
 org $9097A9 : JMP RunWithSpeedBooster
