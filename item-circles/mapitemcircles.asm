@@ -26,8 +26,17 @@ org $90A971 : JSR SaveY
 
 org $90FC4F
 	ShiftMinimap:
-		ORA #$2800 ;moved
 		PHB : PHP : PHX : PHY : PHA
+	ColorUncharted:
+		;STY $4204 : SEP #$20 : LDA #$06 : STA $4206
+		;PHA : PLA : PHA : PLA : REP #$20
+		;LDA $079F : ASL A : TAY ;region
+		;PEA $8282 : PLB : PLB
+		;LDA $9717,Y : CLC : ADC $4214 : TAX
+		;LDA $0000,X : BIT $4216 : BNE +
+		;	PLA : ORA #$2800 : BRA ++
+		;+	PLA : ORA #$3400
+		;++	PHA		
 		LDA $079F : ASL A : TAY ;region
 		PEA $B8B8 : PLB : PLB
 		LDA $40 : ASL A : CLC : ADC ItemIndexTable,Y : TAX ;x
@@ -40,6 +49,7 @@ org $90FC4F
 			PLA : CLC : ADC !ShiftDot : PHA : BRA +++
 		++  PLA : CLC : ADC $0004,X : PHA ;shift qt
 		+++	PLA : PLY : PLX : PLP : PLB
+		ORA #$2800 ;moved
 		RTS
 	ResetXCounter:
 		LDA #$FFFE : CLC : ADC $36 : STA $40
@@ -55,8 +65,8 @@ org $90FC4F
 		PLA
 		RTS
 	IncreaseYCounter:
-		ORA #$2C00 ;moved
 		INC $34
+		ORA #$2C00 ;moved
 		RTS
 	SaveX:
 		ADC $07A1 ;moved
