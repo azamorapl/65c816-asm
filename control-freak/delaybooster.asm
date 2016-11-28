@@ -8,9 +8,16 @@ org $91B61F : DW !RunDelay,$0001,!BoostDelay,$0001,$0002
 ;run timer even without speed booster
 org $90855E : BRA $1D
 
-;lower to reduce brinstar gate trigger range
-;org $A19A6C : DB $80 ;was $90
-;org $A19A7C : DB $90
+;disable running with spring ball
+org $909774 : AND #$FFFF
+
+;9098B3 validate pose
+;91F543 transition to superjump pose
+
+;disable running without speed booster
+org $909F19
+	;DW $0002 : DW $0001
+	DW $0000 : DW $0000
 
 org $9097A9 : JMP RunWithSpeedBooster
 org $9097D5 : JMP RunWithoutSpeedBooster
