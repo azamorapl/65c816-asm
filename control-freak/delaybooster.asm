@@ -24,7 +24,7 @@ org $90FC01
 	RunWithoutSpeedBooster:
 		LDA #$97D8 : STA $0019
 	DelayRunning:
-		LDA $0B3E : AND #$FF00 : CMP #$0300 : BMI +
+		LDA $0B3E : AND #$FF00 : CMP #$0200 : BMI +
 		LDA $0B42 ;moved
 		JMP ($0019) ;run
 	+	JMP $9813 ;skip
