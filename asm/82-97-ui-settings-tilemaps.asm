@@ -3,12 +3,12 @@ org $978DF4
 incbin bin\Options.bin
 
 org $978FCD
-incbin bin\Controller.bin
-;incbin bin\ControllerCF.bin ;if you use Control Freak
+;incbin bin\Controller.bin
+incbin bin\ControllerCF.bin
 
 org $97938D
-incbin bin\Special.bin
-;incbin bin\SpecialCF.bin ;if you use Control Freak
+;incbin bin\Special.bin
+incbin bin\SpecialCF.bin
 }
 
 {; 82: SPECIAL SETTINGS TEXT =================

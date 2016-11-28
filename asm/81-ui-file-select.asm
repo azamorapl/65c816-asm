@@ -1,19 +1,19 @@
 {; 81: FILE SELECT UI TWEAKS =================
   org $81A0A8
-    ;LDA $09C2 : STA $4204
-    JSL SwitchUIEnergyFormula : NOP #2
+    LDA $09C2 : STA $4204
+    ;JSL SwitchUIEnergyFormula : NOP #2
   org $81A0B2
-    ;STA $4206 : PHA : PLA : PHA : PLA
-    JSL ScaleUIEnergy : NOP #3
+    STA $4206 : PHA : PLA : PHA : PLA
+    ;JSL ScaleUIEnergy : NOP #3
   org $81A0C5
-    ;LDA $09C4 : STA $4204
-    JSL AdjustUIEnergy : NOP #2
+    LDA $09C4 : STA $4204
+    ;JSL AdjustUIEnergy : NOP #2
   org $81A0CF
-    ;STA $4206 : PHA : PLA : PHA : PLA
-    JSL ScaleUIEnergy : NOP #3
+    STA $4206 : PHA : PLA : PHA : PLA
+    ;JSL ScaleUIEnergy : NOP #3
   org $81A117
-    ;STA $4204
-    JSR TweakFileEnergyDigits
+    STA $4204
+    ;JSR TweakFileEnergyDigits
   org $81A149
     JSR DisplayDifficulty : NOP
 
