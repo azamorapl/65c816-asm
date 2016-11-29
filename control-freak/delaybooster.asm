@@ -1,7 +1,7 @@
 LoRom
 
 ;delay for each speed increase
-!RunDelay = $0003
+!RunDelay = $0002
 !BoostDelay = $0003
 org $91B61F : DW !RunDelay,$0001,!BoostDelay,$0001,$0002
 
@@ -9,7 +9,7 @@ org $91B61F : DW !RunDelay,$0001,!BoostDelay,$0001,$0002
 org $90855E : BRA $1D
 
 ;disable running with spring ball
-org $909774 : AND #$FFFF
+org $909774 : AND #$00FF
 
 ;9098B3 validate pose
 ;91F543 transition to superjump pose
@@ -17,7 +17,10 @@ org $909774 : AND #$FFFF
 ;disable running without speed booster
 org $909F19
 	;DW $0002 : DW $0001
-	DW $0000 : DW $0000
+	DW $0001 : DW $0000
+org $91B5D1
+	;DB $D3,$B5
+	DB $E8,$B5
 
 org $9097A9 : JMP RunWithSpeedBooster
 org $9097D5 : JMP RunWithoutSpeedBooster
