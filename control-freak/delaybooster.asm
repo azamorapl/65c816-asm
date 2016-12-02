@@ -11,23 +11,21 @@ org $90855E : BRA $1D
 ;disable running with spring ball
 org $909774 : AND #$00FF
 
-;9098B3 validate pose
-;91F543 transition to superjump pose
-
 ;disable running without speed booster
-org $909F19
-	;DW $0002 : DW $0001
-	DW $0001 : DW $0000
-org $91B5D1
-	;DB $D3,$B5
-	DB $E8,$B5
+org $909F19 : DW $0000 : DW $0000 ;0002,0001
+org $91B5D1 : DB $E8,$B5 ;D3,B5
+	
+;horizontal momentum, p/f
+org $909F65 : DW $0003 ;0002
+;horizontal momentum, sp/f
+org $909F67 : DW $2000 ;C000
 
 org $9097A9 : JMP RunWithSpeedBooster
 org $9097D5 : JMP RunWithoutSpeedBooster
 org $9097D2 : JSR ActivateTimer
 org $90858C : JSR CheckItemForShine
 
-org $90FC01
+org $90FC05
 	RunWithSpeedBooster:
 		LDA #$97AC : STA $0019
 		BRA DelayRunning
