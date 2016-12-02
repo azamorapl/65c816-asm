@@ -49,9 +49,3 @@ org $86F600
 			LDA #$0002 : BRA ++
 		+	LDA #$0001
 		++	RTS
-		VerticalSpeeds:
-			DW $0002,$0001
-		HorizontalSpeeds:
-			DW $0003,$0002
-		DistanceThresholds:
-			DW $0055,$0096
