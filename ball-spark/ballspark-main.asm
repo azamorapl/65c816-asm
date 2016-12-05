@@ -2,6 +2,7 @@ LoRom
 
 !IsBallsparking = $7ED454 ;unused ram
 !PrepareShineLeftPose = #$00C7
+!PrepareShineRightPose = #$00C8
 !ShineLeftPose = #$00CA
 !ShineRightPose = #$00C9
 !ShineUpLeftPose = #$00CC
@@ -33,15 +34,17 @@ org $908874 : JSR AdjustFinalEchoHeight
 
 org $90FCE2
 	CheckSpringPose:
-		LDA !IsBallsparking : BNE +
-		LDA $0A68 : BEQ +
-		LDA $8B : BIT $09B4 : BEQ +
+		LDA !IsBallsparking : BNE +++
+		LDA $0A68 : BEQ +++
+		LDA $8B : BIT $09B4 : BEQ +++
 		LDA #$001B : STA $0A1F
 		LDA $0AFA : SEC : SBC #$0010 : STA $0AFA : STA $0B14
-		LDA !PrepareShineLeftPose : STA $0A1C
-		LDA #$0001 : STA !IsBallsparking
+		LDA $0A1E : AND #$00FF : CMP #$0004 : BEQ +
+		LDA !PrepareShineLeftPose : STA $0A1C : BRA ++
+	+	LDA !PrepareShineRightPose : STA $0A1C
+	++	LDA #$0001 : STA !IsBallsparking
 		JSL $90CFFA
-	+	LDA $0A23 : AND #$00FF ;moved
+	+++	LDA $0A23 : AND #$00FF ;moved
 		RTL
 	SkipAnimation:
 		JSR FakeAnimation : ASL A
