@@ -8,7 +8,7 @@
   org $8BE325 : JSR ForceEnding
   org $8BE36C : JSR ForceEnding
     
-  org $8BF8A0
+  org $8BFB50
     SetupCollectionHack:
       LDX #$0008 ;moved
       LDA $09C4  : SEC : SBC !StartingEnergyAddress : STA $09C4
