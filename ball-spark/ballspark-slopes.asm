@@ -7,6 +7,8 @@ LoRom
 !SpringMovingRightPose = #$007B
 org $948884 : JSR ContinueShining
 
+org $909774 : AND #$00FF
+
 org $94B1F0
 	ContinueShining:
 		LDA $0A1C : CMP !ShineRightPose

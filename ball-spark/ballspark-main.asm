@@ -36,7 +36,7 @@ org $90FCE2
 	CheckSpringPose:
 		LDA !IsBallsparking : BNE +++
 		LDA $0A68 : BEQ +++
-		LDA $8B : BIT $09B4 : BEQ +++
+		LDA $8B : CMP $09B4 : BNE +++
 		LDA #$001B : STA $0A1F
 		LDA $0AFA : SEC : SBC #$0010 : STA $0AFA : STA $0B14
 		LDA $0A1E : AND #$00FF : CMP #$0004 : BEQ +
@@ -44,7 +44,10 @@ org $90FCE2
 	+	LDA !PrepareShineRightPose : STA $0A1C
 	++	LDA #$0001 : STA !IsBallsparking
 		JSL $90CFFA
-	+++	LDA $0A23 : AND #$00FF ;moved
+	+++	LDA $0B3E : AND #$FF00 : CMP #$0400 : BNE +
+		LDA $8B : BIT $09AC : BEQ +
+		LDA #$00B4 : STA $0A68 : LDA #$0001 : STA $0ACC : STZ $0ACE 
+	+	LDA $0A23 : AND #$00FF ;moved
 		RTL
 	SkipAnimation:
 		JSR FakeAnimation : ASL A
