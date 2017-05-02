@@ -2,7 +2,7 @@ LoRom
 
 ;delay for each speed increase
 !RunDelay = $0002
-!BoostDelay = $0003
+!BoostDelay = $0002
 org $91B61F : DW !RunDelay,$0001,!BoostDelay,$0001,$0002
 
 ;run timer even without speed booster
@@ -12,13 +12,13 @@ org $90855E : BRA $1D
 org $909774 : AND #$00FF
 
 ;disable running without speed booster
-org $909F19 : DW $0000 : DW $0000 ;0002,0001
+org $909F19 : DW $0000,$0000 ;0002,0001
 org $91B5D1 : DB $E8,$B5 ;D3,B5
-	
-;horizontal momentum, p/f
-org $909F65 : DW $0003 ;0002
-;horizontal momentum, sp/f
-org $909F67 : DW $2000 ;C000
+
+;momentum sp/f, max momentum p/f, max momentum sp/f
+org $909F63 : DW $3000,$0002,$C000,$0000,$8000			;3000,0002,C000 / 0003,2000
+			DW $0000,$C000,$0002,$4000,$0000,$8000 	 	;02 = normal jump
+			DW $0000,$C000,$0002,$6000,$0000,$8000 	 	;03 = spin jump
 
 org $9097A9 : JMP RunWithSpeedBooster
 org $9097D5 : JMP RunWithoutSpeedBooster
