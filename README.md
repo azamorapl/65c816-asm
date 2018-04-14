@@ -1,7 +1,10 @@
-Misc patches for Super Metroid
-==============================
+SNES ASM patches
+=================
 
-Includes edits that alter their original functionality.
+Original patches and edits/improvements over existing ones. Original authors are listed below each name.
+
+*Super Metroid*
+------------------------------------------
 
 Control Freak + Project Base compatibility
 ------------------------------------------
