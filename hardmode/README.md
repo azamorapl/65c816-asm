@@ -57,9 +57,3 @@ SHA-256: 12B77C4BC9C1832CEE8881244659065EE1D84C70C3D29E6EAF92E6798CC2CA72
 If applying to a modified ROM, make sure to check each source file and change whatever pointers may conflict with other hacks.
 
 The files under the [samples](/sample/) folder are provided as a proof of concept of what can be extended from this hack. They will most likely not work with anything but the vanilla ROM, so don't forget to comment them out accordingly.
-
-Screenshots
-------
-![File Select screen](/screens/fileselect.PNG?raw=true "File Select screen")
-![Special Setting screen](/screens/specialsetting.PNG?raw=true "Special Setting screen")
-![Sample room edit](/screens/room.PNG?raw=true "Sample room edit")
